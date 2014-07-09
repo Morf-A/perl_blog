@@ -699,3 +699,273 @@
 [Wed Jul  9 14:59:49 2014] [debug] Rendering template "initial_form.html.ep".
 [Wed Jul  9 14:59:49 2014] [debug] Rendering template "layouts/default.html.ep".
 [Wed Jul  9 14:59:49 2014] [debug] 200 OK (0.008892s, 112.461/s).
+[Wed Jul  9 15:00:50 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 15:00:50 2014] [debug] GET "/".
+[Wed Jul  9 15:00:50 2014] [debug] Controller "initial_form" does not exist.
+[Wed Jul  9 15:00:50 2014] [debug] Rendering cached template "initial_form.html.ep".
+[Wed Jul  9 15:00:50 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Wed Jul  9 15:00:50 2014] [debug] 200 OK (0.002150s, 465.116/s).
+[Wed Jul  9 15:01:27 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 15:01:27 2014] [debug] POST "/login".
+[Wed Jul  9 15:01:27 2014] [debug] Controller "PerlBlog::Controller::Auths" does not exist.
+[Wed Jul  9 15:01:27 2014] [debug] Template "auths/create.html.ep" not found.
+[Wed Jul  9 15:01:27 2014] [debug] Template "not_found.development.html.ep" not found.
+[Wed Jul  9 15:01:27 2014] [debug] Template "not_found.html.ep" not found.
+[Wed Jul  9 15:01:27 2014] [debug] Rendering inline template "569839bd27413e47e26c8476bacb2540".
+[Wed Jul  9 15:01:27 2014] [debug] Rendering inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Wed Jul  9 15:01:27 2014] [debug] 404 Not Found (0.021957s, 45.544/s).
+[Wed Jul  9 15:01:36 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 15:01:36 2014] [debug] POST "/signup".
+[Wed Jul  9 15:01:36 2014] [debug] Controller "PerlBlog::Controller::Users" does not exist.
+[Wed Jul  9 15:01:36 2014] [debug] Template "users/create.html.ep" not found.
+[Wed Jul  9 15:01:36 2014] [debug] Template "not_found.development.html.ep" not found.
+[Wed Jul  9 15:01:36 2014] [debug] Template "not_found.html.ep" not found.
+[Wed Jul  9 15:01:36 2014] [debug] Rendering cached inline template "569839bd27413e47e26c8476bacb2540".
+[Wed Jul  9 15:01:36 2014] [debug] Rendering cached inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Wed Jul  9 15:01:36 2014] [debug] 404 Not Found (0.008116s, 123.213/s).
+[Wed Jul  9 16:28:12 2014] [info] Listening at "http://*:3000".
+[Wed Jul  9 16:28:15 2014] [debug] Your secret passphrase needs to be changed!!!
+[Wed Jul  9 16:28:15 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 16:28:15 2014] [debug] GET "/".
+[Wed Jul  9 16:28:15 2014] [debug] Controller "initial_form" does not exist.
+[Wed Jul  9 16:28:15 2014] [debug] Rendering template "initial_form.html.ep".
+[Wed Jul  9 16:28:16 2014] [debug] Rendering template "layouts/default.html.ep".
+[Wed Jul  9 16:28:16 2014] [debug] 200 OK (0.131481s, 7.606/s).
+[Wed Jul  9 16:28:16 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:08:18 2014] [info] Listening at "http://*:3000".
+[Wed Jul  9 17:08:22 2014] [debug] Your secret passphrase needs to be changed!!!
+[Wed Jul  9 17:08:22 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:08:22 2014] [debug] GET "/".
+[Wed Jul  9 17:08:22 2014] [debug] Controller "initial_form" does not exist.
+[Wed Jul  9 17:08:22 2014] [debug] Rendering template "initial_form.html.ep".
+[Wed Jul  9 17:08:22 2014] [debug] Rendering template "layouts/default.html.ep".
+[Wed Jul  9 17:08:22 2014] [debug] 200 OK (0.009252s, 108.085/s).
+[Wed Jul  9 17:08:22 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:13:45 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:13:45 2014] [debug] GET "/".
+[Wed Jul  9 17:13:45 2014] [debug] Controller "initial_form" does not exist.
+[Wed Jul  9 17:13:45 2014] [debug] Rendering cached template "initial_form.html.ep".
+[Wed Jul  9 17:13:45 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Wed Jul  9 17:13:45 2014] [debug] 200 OK (0.002213s, 451.875/s).
+[Wed Jul  9 17:13:45 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:14:10 2014] [info] Listening at "http://*:3000".
+[Wed Jul  9 17:15:37 2014] [debug] Your secret passphrase needs to be changed!!!
+[Wed Jul  9 17:15:37 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:15:37 2014] [debug] GET "/".
+[Wed Jul  9 17:15:37 2014] [debug] Controller "initial_form" does not exist.
+[Wed Jul  9 17:15:37 2014] [debug] Rendering template "initial_form.html.ep".
+[Wed Jul  9 17:15:37 2014] [debug] Rendering template "layouts/default.html.ep".
+[Wed Jul  9 17:15:37 2014] [debug] 200 OK (0.009086s, 110.059/s).
+[Wed Jul  9 17:15:38 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:15:38 2014] [debug] GET "/".
+[Wed Jul  9 17:15:38 2014] [debug] Controller "initial_form" does not exist.
+[Wed Jul  9 17:15:38 2014] [debug] Rendering cached template "initial_form.html.ep".
+[Wed Jul  9 17:15:38 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Wed Jul  9 17:15:38 2014] [debug] 200 OK (0.002406s, 415.628/s).
+[Wed Jul  9 17:15:40 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:15:40 2014] [debug] POST "/signup".
+[Wed Jul  9 17:15:40 2014] [debug] Routing to controller "PerlBlog::Controller::Users" and action "create".
+[Wed Jul  9 17:15:40 2014] [error] Can't locate object method "insert" via package "PerlBlog::Model::User" at C:/Users/Morf/Documents/GitHub/perl_blog/script/../lib/PerlBlog/Controller/Users.pm line 16.
+
+[Wed Jul  9 17:15:40 2014] [debug] Template "exception.development.html.ep" not found.
+[Wed Jul  9 17:15:40 2014] [debug] Template "exception.html.ep" not found.
+[Wed Jul  9 17:15:40 2014] [debug] Rendering inline template "569839bd27413e47e26c8476bacb2540".
+[Wed Jul  9 17:15:40 2014] [debug] Rendering inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Wed Jul  9 17:15:40 2014] [debug] 500 Internal Server Error (0.024115s, 41.468/s).
+[Wed Jul  9 17:15:40 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:15:41 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:15:41 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:15:41 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:15:41 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:15:41 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:15:41 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:16:01 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:16:01 2014] [debug] POST "/signup".
+[Wed Jul  9 17:16:01 2014] [debug] Routing to controller "PerlBlog::Controller::Users" and action "create".
+[Wed Jul  9 17:16:01 2014] [error] Can't locate object method "insert" via package "PerlBlog::Model::User" at C:/Users/Morf/Documents/GitHub/perl_blog/script/../lib/PerlBlog/Controller/Users.pm line 16.
+
+[Wed Jul  9 17:16:01 2014] [debug] Template "exception.development.html.ep" not found.
+[Wed Jul  9 17:16:01 2014] [debug] Template "exception.html.ep" not found.
+[Wed Jul  9 17:16:01 2014] [debug] Rendering cached inline template "569839bd27413e47e26c8476bacb2540".
+[Wed Jul  9 17:16:01 2014] [debug] Rendering cached inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Wed Jul  9 17:16:01 2014] [debug] 500 Internal Server Error (0.007807s, 128.090/s).
+[Wed Jul  9 17:17:54 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:17:54 2014] [debug] GET "/".
+[Wed Jul  9 17:17:54 2014] [debug] Controller "initial_form" does not exist.
+[Wed Jul  9 17:17:54 2014] [debug] Rendering cached template "initial_form.html.ep".
+[Wed Jul  9 17:17:54 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Wed Jul  9 17:17:54 2014] [debug] 200 OK (0.002181s, 458.505/s).
+[Wed Jul  9 17:17:56 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:17:56 2014] [debug] POST "/signup".
+[Wed Jul  9 17:17:56 2014] [debug] Routing to controller "PerlBlog::Controller::Users" and action "create".
+[Wed Jul  9 17:17:56 2014] [error] Can't locate object method "insert" via package "PerlBlog::Model::User" at C:/Users/Morf/Documents/GitHub/perl_blog/script/../lib/PerlBlog/Controller/Users.pm line 16.
+
+[Wed Jul  9 17:17:56 2014] [debug] Template "exception.development.html.ep" not found.
+[Wed Jul  9 17:17:56 2014] [debug] Template "exception.html.ep" not found.
+[Wed Jul  9 17:17:56 2014] [debug] Rendering cached inline template "569839bd27413e47e26c8476bacb2540".
+[Wed Jul  9 17:17:56 2014] [debug] Rendering cached inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Wed Jul  9 17:17:56 2014] [debug] 500 Internal Server Error (0.008195s, 122.026/s).
+[Wed Jul  9 17:18:05 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:18:05 2014] [debug] GET "/".
+[Wed Jul  9 17:18:05 2014] [debug] Controller "initial_form" does not exist.
+[Wed Jul  9 17:18:05 2014] [debug] Rendering cached template "initial_form.html.ep".
+[Wed Jul  9 17:18:05 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Wed Jul  9 17:18:05 2014] [debug] 200 OK (0.002416s, 413.907/s).
+[Wed Jul  9 17:18:09 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:18:09 2014] [debug] POST "/signup".
+[Wed Jul  9 17:18:09 2014] [debug] Routing to controller "PerlBlog::Controller::Users" and action "create".
+[Wed Jul  9 17:18:09 2014] [error] Can't locate object method "insert" via package "PerlBlog::Model::User" at C:/Users/Morf/Documents/GitHub/perl_blog/script/../lib/PerlBlog/Controller/Users.pm line 16.
+
+[Wed Jul  9 17:18:09 2014] [debug] Template "exception.development.html.ep" not found.
+[Wed Jul  9 17:18:09 2014] [debug] Template "exception.html.ep" not found.
+[Wed Jul  9 17:18:09 2014] [debug] Rendering cached inline template "569839bd27413e47e26c8476bacb2540".
+[Wed Jul  9 17:18:09 2014] [debug] Rendering cached inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Wed Jul  9 17:18:09 2014] [debug] 500 Internal Server Error (0.008586s, 116.469/s).
+[Wed Jul  9 17:18:29 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:18:29 2014] [debug] POST "/signup".
+[Wed Jul  9 17:18:29 2014] [debug] Routing to controller "PerlBlog::Controller::Users" and action "create".
+[Wed Jul  9 17:18:29 2014] [error] Can't locate object method "insert" via package "PerlBlog::Model::User" at C:/Users/Morf/Documents/GitHub/perl_blog/script/../lib/PerlBlog/Controller/Users.pm line 16.
+
+[Wed Jul  9 17:18:29 2014] [debug] Template "exception.development.html.ep" not found.
+[Wed Jul  9 17:18:29 2014] [debug] Template "exception.html.ep" not found.
+[Wed Jul  9 17:18:29 2014] [debug] Rendering cached inline template "569839bd27413e47e26c8476bacb2540".
+[Wed Jul  9 17:18:29 2014] [debug] Rendering cached inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Wed Jul  9 17:18:29 2014] [debug] 500 Internal Server Error (0.007752s, 128.999/s).
+[Wed Jul  9 17:18:29 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:18:29 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:18:29 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:18:29 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:18:29 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:18:29 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:18:29 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:20:01 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:20:01 2014] [debug] GET "/".
+[Wed Jul  9 17:20:01 2014] [debug] Controller "initial_form" does not exist.
+[Wed Jul  9 17:20:01 2014] [debug] Rendering cached template "initial_form.html.ep".
+[Wed Jul  9 17:20:01 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Wed Jul  9 17:20:01 2014] [debug] 200 OK (0.002084s, 479.846/s).
+[Wed Jul  9 17:20:02 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:20:02 2014] [debug] POST "/signup".
+[Wed Jul  9 17:20:02 2014] [debug] Routing to controller "PerlBlog::Controller::Users" and action "create".
+[Wed Jul  9 17:20:02 2014] [error] Can't locate object method "insert" via package "PerlBlog::Model::User" at C:/Users/Morf/Documents/GitHub/perl_blog/script/../lib/PerlBlog/Controller/Users.pm line 16.
+
+[Wed Jul  9 17:20:02 2014] [debug] Template "exception.development.html.ep" not found.
+[Wed Jul  9 17:20:02 2014] [debug] Template "exception.html.ep" not found.
+[Wed Jul  9 17:20:02 2014] [debug] Rendering cached inline template "569839bd27413e47e26c8476bacb2540".
+[Wed Jul  9 17:20:02 2014] [debug] Rendering cached inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Wed Jul  9 17:20:02 2014] [debug] 500 Internal Server Error (0.008424s, 118.708/s).
+[Wed Jul  9 17:20:05 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:20:05 2014] [debug] POST "/signup".
+[Wed Jul  9 17:20:05 2014] [debug] Routing to controller "PerlBlog::Controller::Users" and action "create".
+[Wed Jul  9 17:20:05 2014] [error] Can't locate object method "insert" via package "PerlBlog::Model::User" at C:/Users/Morf/Documents/GitHub/perl_blog/script/../lib/PerlBlog/Controller/Users.pm line 16.
+
+[Wed Jul  9 17:20:05 2014] [debug] Template "exception.development.html.ep" not found.
+[Wed Jul  9 17:20:05 2014] [debug] Template "exception.html.ep" not found.
+[Wed Jul  9 17:20:05 2014] [debug] Rendering cached inline template "569839bd27413e47e26c8476bacb2540".
+[Wed Jul  9 17:20:05 2014] [debug] Rendering cached inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Wed Jul  9 17:20:05 2014] [debug] 500 Internal Server Error (0.008419s, 118.779/s).
+[Wed Jul  9 17:27:25 2014] [info] Listening at "http://*:3000".
+[Wed Jul  9 17:27:29 2014] [debug] Your secret passphrase needs to be changed!!!
+[Wed Jul  9 17:27:29 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:27:29 2014] [debug] GET "/".
+[Wed Jul  9 17:27:29 2014] [debug] Controller "initial_form" does not exist.
+[Wed Jul  9 17:27:29 2014] [debug] Rendering template "initial_form.html.ep".
+[Wed Jul  9 17:27:29 2014] [debug] Rendering template "layouts/default.html.ep".
+[Wed Jul  9 17:27:29 2014] [debug] 200 OK (0.008909s, 112.246/s).
+[Wed Jul  9 17:27:34 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:27:34 2014] [debug] POST "/signup".
+[Wed Jul  9 17:27:34 2014] [debug] Routing to controller "PerlBlog::Controller::Users" and action "create".
+[Wed Jul  9 17:27:34 2014] [error] DBD::SQLite::db prepare failed: no such table: users at C:/Users/Morf/Documents/GitHub/perl_blog/script/../lib/PerlBlog/Controller/Users.pm line 16.
+
+[Wed Jul  9 17:27:34 2014] [debug] Template "exception.development.html.ep" not found.
+[Wed Jul  9 17:27:34 2014] [debug] Template "exception.html.ep" not found.
+[Wed Jul  9 17:27:34 2014] [debug] Rendering inline template "569839bd27413e47e26c8476bacb2540".
+[Wed Jul  9 17:27:34 2014] [debug] Rendering inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Wed Jul  9 17:27:34 2014] [debug] 500 Internal Server Error (0.029139s, 34.318/s).
+[Wed Jul  9 17:28:27 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:28:27 2014] [debug] POST "/signup".
+[Wed Jul  9 17:28:27 2014] [debug] Routing to controller "PerlBlog::Controller::Users" and action "create".
+[Wed Jul  9 17:28:27 2014] [error] DBD::SQLite::db prepare failed: no such table: users at C:/Users/Morf/Documents/GitHub/perl_blog/script/../lib/PerlBlog/Controller/Users.pm line 16.
+
+[Wed Jul  9 17:28:27 2014] [debug] Template "exception.development.html.ep" not found.
+[Wed Jul  9 17:28:27 2014] [debug] Template "exception.html.ep" not found.
+[Wed Jul  9 17:28:27 2014] [debug] Rendering cached inline template "569839bd27413e47e26c8476bacb2540".
+[Wed Jul  9 17:28:27 2014] [debug] Rendering cached inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Wed Jul  9 17:28:27 2014] [debug] 500 Internal Server Error (0.013001s, 76.917/s).
+[Wed Jul  9 17:28:27 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:28:27 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:28:27 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:28:27 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:28:27 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:28:27 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:28:27 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:28:58 2014] [info] Listening at "http://*:3000".
+[Wed Jul  9 17:29:14 2014] [debug] Your secret passphrase needs to be changed!!!
+[Wed Jul  9 17:29:14 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:29:14 2014] [debug] GET "/".
+[Wed Jul  9 17:29:14 2014] [debug] Controller "initial_form" does not exist.
+[Wed Jul  9 17:29:14 2014] [debug] Rendering template "initial_form.html.ep".
+[Wed Jul  9 17:29:14 2014] [debug] Rendering template "layouts/default.html.ep".
+[Wed Jul  9 17:29:14 2014] [debug] 200 OK (0.009177s, 108.968/s).
+[Wed Jul  9 17:29:16 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:29:16 2014] [debug] POST "/signup".
+[Wed Jul  9 17:29:16 2014] [debug] Routing to controller "PerlBlog::Controller::Users" and action "create".
+[Wed Jul  9 17:29:16 2014] [debug] Template "users/create.html.ep" not found.
+[Wed Jul  9 17:29:16 2014] [debug] Nothing has been rendered, expecting delayed response.
+[Wed Jul  9 17:29:31 2014] [debug] Inactivity timeout.
+[Wed Jul  9 17:29:32 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:29:32 2014] [debug] POST "/signup".
+[Wed Jul  9 17:29:32 2014] [debug] Routing to controller "PerlBlog::Controller::Users" and action "create".
+[Wed Jul  9 17:29:32 2014] [error] DBD::SQLite::st execute failed: column login is not unique at C:/Users/Morf/Documents/GitHub/perl_blog/script/../lib/PerlBlog/Controller/Users.pm line 16.
+
+[Wed Jul  9 17:29:32 2014] [debug] Template "exception.development.html.ep" not found.
+[Wed Jul  9 17:29:32 2014] [debug] Template "exception.html.ep" not found.
+[Wed Jul  9 17:29:32 2014] [debug] Rendering inline template "569839bd27413e47e26c8476bacb2540".
+[Wed Jul  9 17:29:32 2014] [debug] Rendering inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Wed Jul  9 17:29:32 2014] [debug] 500 Internal Server Error (0.028793s, 34.731/s).
+[Wed Jul  9 17:31:26 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:31:26 2014] [debug] GET "/".
+[Wed Jul  9 17:31:26 2014] [debug] Controller "initial_form" does not exist.
+[Wed Jul  9 17:31:26 2014] [debug] Rendering cached template "initial_form.html.ep".
+[Wed Jul  9 17:31:26 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Wed Jul  9 17:31:26 2014] [debug] 200 OK (0.002236s, 447.227/s).
+[Wed Jul  9 17:31:31 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:31:31 2014] [debug] POST "/signup".
+[Wed Jul  9 17:31:31 2014] [debug] Routing to controller "PerlBlog::Controller::Users" and action "create".
+[Wed Jul  9 17:31:31 2014] [error] DBD::SQLite::st execute failed: no such table: user at C:/Users/Morf/Documents/GitHub/perl_blog/script/../lib/PerlBlog/Controller/Users.pm line 16.
+
+[Wed Jul  9 17:31:31 2014] [debug] Template "exception.development.html.ep" not found.
+[Wed Jul  9 17:31:31 2014] [debug] Template "exception.html.ep" not found.
+[Wed Jul  9 17:31:31 2014] [debug] Rendering cached inline template "569839bd27413e47e26c8476bacb2540".
+[Wed Jul  9 17:31:31 2014] [debug] Rendering cached inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Wed Jul  9 17:31:31 2014] [debug] 500 Internal Server Error (0.014252s, 70.166/s).
+[Wed Jul  9 17:31:41 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:31:41 2014] [debug] GET "/".
+[Wed Jul  9 17:31:41 2014] [debug] Controller "initial_form" does not exist.
+[Wed Jul  9 17:31:41 2014] [debug] Rendering cached template "initial_form.html.ep".
+[Wed Jul  9 17:31:41 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Wed Jul  9 17:31:41 2014] [debug] 200 OK (0.002298s, 435.161/s).
+[Wed Jul  9 17:31:41 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:31:41 2014] [debug] GET "/".
+[Wed Jul  9 17:31:41 2014] [debug] Controller "initial_form" does not exist.
+[Wed Jul  9 17:31:41 2014] [debug] Rendering cached template "initial_form.html.ep".
+[Wed Jul  9 17:31:41 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Wed Jul  9 17:31:41 2014] [debug] 200 OK (0.002213s, 451.875/s).
+[Wed Jul  9 17:31:59 2014] [info] Listening at "http://*:3000".
+[Wed Jul  9 17:32:04 2014] [debug] Your secret passphrase needs to be changed!!!
+[Wed Jul  9 17:32:04 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:32:04 2014] [debug] GET "/".
+[Wed Jul  9 17:32:04 2014] [debug] Controller "initial_form" does not exist.
+[Wed Jul  9 17:32:04 2014] [debug] Rendering template "initial_form.html.ep".
+[Wed Jul  9 17:32:04 2014] [debug] Rendering template "layouts/default.html.ep".
+[Wed Jul  9 17:32:04 2014] [debug] 200 OK (0.009202s, 108.672/s).
+[Wed Jul  9 17:32:05 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:32:05 2014] [debug] POST "/signup".
+[Wed Jul  9 17:32:05 2014] [debug] Routing to controller "PerlBlog::Controller::Users" and action "create".
+[Wed Jul  9 17:32:05 2014] [debug] 302 Found (0.144566s, 6.917/s).
+[Wed Jul  9 17:32:05 2014] [debug] Bad signed cookie "mojolicious", possible hacking attempt.
+[Wed Jul  9 17:32:05 2014] [debug] GET "/".
+[Wed Jul  9 17:32:05 2014] [debug] Controller "initial_form" does not exist.
+[Wed Jul  9 17:32:05 2014] [debug] Rendering cached template "initial_form.html.ep".
+[Wed Jul  9 17:32:05 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Wed Jul  9 17:32:05 2014] [debug] 200 OK (0.002223s, 449.843/s).
