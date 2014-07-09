@@ -2,6 +2,7 @@
 
 
 <center>
+
 <table border=1 cellpadding=10 cellspacing=10><tr>
 <td style="vertical-align: top">
     <h1>Авторизация</h1>
@@ -86,9 +87,9 @@
                     <input  type='submit' value='Регистрация'/>          
                 </td>
             </tr>
-            
-        </table>
 
+        </table>
+        
         
     </div>
 
@@ -97,5 +98,6 @@
     <br /><br />
 </td>
 </tr></table>
-</top>
+<h1><span style="color: red" ><%= flash 'error' %></span><h1>
+
 </center>

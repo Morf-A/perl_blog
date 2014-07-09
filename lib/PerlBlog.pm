@@ -15,14 +15,21 @@ sub startup {
 
     $r->namespaces(['PerlBlog::Controller']);
   
-    $r->route('/')                   ->to('initial_form')->name('initial_form');
+    $r->route('/index')->to('initial_form')->name('initial_form');
     
     
-    #$r->route('/login')              ->to('auths#create')     ->name('auths_create');
-    #$r->route('/logout')             ->to('auths#delete')     ->name('auths_delete');
+    $r->route('/login')->via('post')->to('auths#create')->name('auths_create');
     
-    $r->route('/signup')->via('post')->to('users#create')     ->name('users_create');
-    #$r->route('/main')  ->via('get') ->to('users#show')       ->name('users_show');
+    $r->route('/logout')->to('auths#delete')->name('auths_delete');
+    
+    $r->route('/signup')->via('post')->to('users#create')->name('users_create');
+
+    # Часть сайта после авторизации
+    
+   # my $rn = $r->bridge('/feed')->to('auths#check');
+    $r->route('/')->to('feed#check_auths')->name('feed');
+    
+
     
     # Init Model
     
