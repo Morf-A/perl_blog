@@ -3541,3 +3541,390 @@ Compilation failed in require at (eval 273) line 1.
 [Thu Jul 10 11:12:14 2014] [debug] Rendering cached template "feed/check_auths.html.ep".
 [Thu Jul 10 11:12:14 2014] [debug] Rendering cached template "layouts/default.html.ep".
 [Thu Jul 10 11:12:14 2014] [debug] 200 OK (0.000902s, 1108.647/s).
+[Thu Jul 10 11:17:40 2014] [debug] POST "/login".
+[Thu Jul 10 11:17:40 2014] [debug] Routing to controller "PerlBlog::Controller::Auths" and action "create".
+[Thu Jul 10 11:17:40 2014] [debug] 302 Found (0.000968s, 1033.058/s).
+[Thu Jul 10 11:17:40 2014] [debug] GET "/".
+[Thu Jul 10 11:17:40 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "check_auths".
+[Thu Jul 10 11:17:40 2014] [debug] Rendering cached template "feed/check_auths.html.ep".
+[Thu Jul 10 11:17:40 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Thu Jul 10 11:17:40 2014] [debug] 200 OK (0.000830s, 1204.819/s).
+[Thu Jul 10 11:18:32 2014] [debug] Your secret passphrase needs to be changed!!!
+[Thu Jul 10 11:18:32 2014] [debug] GET "/".
+[Thu Jul 10 11:18:32 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:18:32 2014] [debug] Rendering template "feed/main.html.ep".
+[Thu Jul 10 11:18:32 2014] [debug] Rendering template "layouts/default.html.ep".
+[Thu Jul 10 11:18:32 2014] [debug] 200 OK (0.005825s, 171.674/s).
+[Thu Jul 10 11:18:34 2014] [debug] Your secret passphrase needs to be changed!!!
+[Thu Jul 10 11:18:34 2014] [debug] POST "/logout".
+[Thu Jul 10 11:18:34 2014] [debug] Routing to controller "PerlBlog::Controller::Auths" and action "delete".
+[Thu Jul 10 11:18:34 2014] [debug] 302 Found (0.001452s, 688.705/s).
+[Thu Jul 10 11:18:34 2014] [debug] GET "/index".
+[Thu Jul 10 11:18:34 2014] [debug] Controller "initial_form" does not exist.
+[Thu Jul 10 11:18:34 2014] [debug] Rendering template "initial_form.html.ep".
+[Thu Jul 10 11:18:34 2014] [debug] Rendering template "layouts/default.html.ep".
+[Thu Jul 10 11:18:34 2014] [debug] 200 OK (0.009736s, 102.712/s).
+[Thu Jul 10 11:18:37 2014] [debug] POST "/login".
+[Thu Jul 10 11:18:37 2014] [debug] Routing to controller "PerlBlog::Controller::Auths" and action "create".
+[Thu Jul 10 11:18:37 2014] [debug] 302 Found (0.001334s, 749.625/s).
+[Thu Jul 10 11:18:37 2014] [debug] GET "/".
+[Thu Jul 10 11:18:37 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:18:37 2014] [debug] Rendering template "feed/main.html.ep".
+[Thu Jul 10 11:18:37 2014] [debug] Rendering template "layouts/default.html.ep".
+[Thu Jul 10 11:18:37 2014] [debug] 200 OK (0.003178s, 314.663/s).
+[Thu Jul 10 11:20:12 2014] [debug] Your secret passphrase needs to be changed!!!
+[Thu Jul 10 11:20:12 2014] [debug] GET "/".
+[Thu Jul 10 11:20:12 2014] [error] Global symbol "$self" requires explicit package name at C:/Users/Morf/Documents/GitHub/perl_blog/script/../lib/PerlBlog/Controller/Feed.pm line 17.
+Compilation failed in require at (eval 270) line 1.
+
+[Thu Jul 10 11:20:12 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:20:12 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:20:12 2014] [debug] Rendering inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:20:12 2014] [debug] Rendering inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:20:12 2014] [debug] 500 Internal Server Error (0.025695s, 38.918/s).
+[Thu Jul 10 11:20:41 2014] [debug] Your secret passphrase needs to be changed!!!
+[Thu Jul 10 11:20:41 2014] [debug] GET "/".
+[Thu Jul 10 11:20:41 2014] [error] No such class self at C:/Users/Morf/Documents/GitHub/perl_blog/script/../lib/PerlBlog/Controller/Feed.pm line 18, near "my self"
+syntax error at C:/Users/Morf/Documents/GitHub/perl_blog/script/../lib/PerlBlog/Controller/Feed.pm line 18, near "my self ="
+Global symbol "$self" requires explicit package name at C:/Users/Morf/Documents/GitHub/perl_blog/script/../lib/PerlBlog/Controller/Feed.pm line 19.
+Compilation failed in require at (eval 270) line 1.
+
+[Thu Jul 10 11:20:41 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:20:41 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:20:41 2014] [debug] Rendering inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:20:41 2014] [debug] Rendering inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:20:41 2014] [debug] 500 Internal Server Error (0.024629s, 40.603/s).
+[Thu Jul 10 11:20:52 2014] [debug] GET "/".
+[Thu Jul 10 11:20:52 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:20:53 2014] [error] Can't locate object method "main" via package "PerlBlog::Controller::Feed" at C:/strawberry/perl/site/bin/../lib/Mojolicious.pm line 125.
+
+[Thu Jul 10 11:20:53 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:20:53 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:20:53 2014] [debug] Rendering cached inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:20:53 2014] [debug] Rendering cached inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:20:53 2014] [debug] 500 Internal Server Error (0.116382s, 8.592/s).
+[Thu Jul 10 11:21:42 2014] [debug] Your secret passphrase needs to be changed!!!
+[Thu Jul 10 11:21:42 2014] [debug] GET "/".
+[Thu Jul 10 11:21:42 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:21:42 2014] [error] Can't locate object method "check" via package "PerlBlog::Controller::Auths" (perhaps you forgot to load "PerlBlog::Controller::Auths"?) at C:/Users/Morf/Documents/GitHub/perl_blog/script/../lib/PerlBlog/Controller/Feed.pm line 16.
+
+[Thu Jul 10 11:21:42 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:21:42 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:21:42 2014] [debug] Rendering inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:21:42 2014] [debug] Rendering inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:21:42 2014] [debug] 500 Internal Server Error (0.025178s, 39.717/s).
+[Thu Jul 10 11:22:39 2014] [debug] GET "/".
+[Thu Jul 10 11:22:39 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:22:39 2014] [error] Can't locate object method "check" via package "PerlBlog::Controller::Auths" (perhaps you forgot to load "PerlBlog::Controller::Auths"?) at C:/Users/Morf/Documents/GitHub/perl_blog/script/../lib/PerlBlog/Controller/Feed.pm line 16.
+
+[Thu Jul 10 11:22:39 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:22:39 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:22:39 2014] [debug] Rendering cached inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:22:39 2014] [debug] Rendering cached inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:22:39 2014] [debug] 500 Internal Server Error (0.007763s, 128.816/s).
+[Thu Jul 10 11:22:40 2014] [debug] Your secret passphrase needs to be changed!!!
+[Thu Jul 10 11:22:40 2014] [debug] GET "/".
+[Thu Jul 10 11:22:40 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:22:40 2014] [error] Can't locate object method "check" via package "PerlBlog::Controller::Auths" (perhaps you forgot to load "PerlBlog::Controller::Auths"?) at C:/Users/Morf/Documents/GitHub/perl_blog/script/../lib/PerlBlog/Controller/Feed.pm line 17.
+
+[Thu Jul 10 11:22:40 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:22:40 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:22:40 2014] [debug] Rendering inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:22:40 2014] [debug] Rendering inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:22:40 2014] [debug] 500 Internal Server Error (0.024926s, 40.119/s).
+[Thu Jul 10 11:25:11 2014] [debug] GET "/".
+[Thu Jul 10 11:25:11 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:25:11 2014] [error] Can't locate object method "check" via package "PerlBlog::Controller::Auths" (perhaps you forgot to load "PerlBlog::Controller::Auths"?) at C:/Users/Morf/Documents/GitHub/perl_blog/script/../lib/PerlBlog/Controller/Feed.pm line 17.
+
+[Thu Jul 10 11:25:11 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:25:11 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:25:11 2014] [debug] Rendering cached inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:25:11 2014] [debug] Rendering cached inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:25:11 2014] [debug] 500 Internal Server Error (0.007783s, 128.485/s).
+[Thu Jul 10 11:25:12 2014] [debug] Your secret passphrase needs to be changed!!!
+[Thu Jul 10 11:25:12 2014] [debug] GET "/".
+[Thu Jul 10 11:25:12 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:25:12 2014] [error] Can't use string ("PerlBlog::Controller::Auths") as a HASH ref while "strict refs" in use at C:/strawberry/perl/site/bin/../lib/Mojo.pm line 46.
+
+[Thu Jul 10 11:25:12 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:25:12 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:25:12 2014] [debug] Rendering inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:25:12 2014] [debug] Rendering inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:25:12 2014] [debug] 500 Internal Server Error (0.025636s, 39.008/s).
+[Thu Jul 10 11:25:15 2014] [debug] GET "/".
+[Thu Jul 10 11:25:15 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:25:15 2014] [error] Can't use string ("PerlBlog::Controller::Auths") as a HASH ref while "strict refs" in use at C:/strawberry/perl/site/bin/../lib/Mojo.pm line 46.
+
+[Thu Jul 10 11:25:15 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:25:15 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:25:15 2014] [debug] Rendering cached inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:25:15 2014] [debug] Rendering cached inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:25:15 2014] [debug] 500 Internal Server Error (0.008472s, 118.036/s).
+[Thu Jul 10 11:25:48 2014] [debug] Your secret passphrase needs to be changed!!!
+[Thu Jul 10 11:25:48 2014] [debug] GET "/".
+[Thu Jul 10 11:25:48 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:25:48 2014] [error] Can't use string ("PerlBlog::Controller::Auths") as a HASH ref while "strict refs" in use at C:/strawberry/perl/site/bin/../lib/Mojo.pm line 46.
+
+[Thu Jul 10 11:25:48 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:25:48 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:25:48 2014] [debug] Rendering inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:25:48 2014] [debug] Rendering inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:25:48 2014] [debug] 500 Internal Server Error (0.025609s, 39.049/s).
+[Thu Jul 10 11:25:49 2014] [debug] GET "/".
+[Thu Jul 10 11:25:49 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:25:49 2014] [error] Can't use string ("PerlBlog::Controller::Auths") as a HASH ref while "strict refs" in use at C:/strawberry/perl/site/bin/../lib/Mojo.pm line 46.
+
+[Thu Jul 10 11:25:49 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:25:49 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:25:49 2014] [debug] Rendering cached inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:25:49 2014] [debug] Rendering cached inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:25:49 2014] [debug] 500 Internal Server Error (0.008424s, 118.708/s).
+[Thu Jul 10 11:25:49 2014] [debug] GET "/".
+[Thu Jul 10 11:25:49 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:25:49 2014] [error] Can't use string ("PerlBlog::Controller::Auths") as a HASH ref while "strict refs" in use at C:/strawberry/perl/site/bin/../lib/Mojo.pm line 46.
+
+[Thu Jul 10 11:25:49 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:25:49 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:25:49 2014] [debug] Rendering cached inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:25:49 2014] [debug] Rendering cached inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:25:49 2014] [debug] 500 Internal Server Error (0.008965s, 111.545/s).
+[Thu Jul 10 11:25:50 2014] [debug] GET "/".
+[Thu Jul 10 11:25:50 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:25:50 2014] [error] Can't use string ("PerlBlog::Controller::Auths") as a HASH ref while "strict refs" in use at C:/strawberry/perl/site/bin/../lib/Mojo.pm line 46.
+
+[Thu Jul 10 11:25:50 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:25:50 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:25:50 2014] [debug] Rendering cached inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:25:50 2014] [debug] Rendering cached inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:25:50 2014] [debug] 500 Internal Server Error (0.008710s, 114.811/s).
+[Thu Jul 10 11:25:50 2014] [debug] GET "/".
+[Thu Jul 10 11:25:50 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:25:50 2014] [error] Can't use string ("PerlBlog::Controller::Auths") as a HASH ref while "strict refs" in use at C:/strawberry/perl/site/bin/../lib/Mojo.pm line 46.
+
+[Thu Jul 10 11:25:50 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:25:50 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:25:50 2014] [debug] Rendering cached inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:25:50 2014] [debug] Rendering cached inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:25:50 2014] [debug] 500 Internal Server Error (0.009636s, 103.778/s).
+[Thu Jul 10 11:25:50 2014] [debug] GET "/".
+[Thu Jul 10 11:25:50 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:25:50 2014] [error] Can't use string ("PerlBlog::Controller::Auths") as a HASH ref while "strict refs" in use at C:/strawberry/perl/site/bin/../lib/Mojo.pm line 46.
+
+[Thu Jul 10 11:25:50 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:25:50 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:25:50 2014] [debug] Rendering cached inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:25:50 2014] [debug] Rendering cached inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:25:50 2014] [debug] 500 Internal Server Error (0.008268s, 120.948/s).
+[Thu Jul 10 11:25:50 2014] [debug] GET "/".
+[Thu Jul 10 11:25:50 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:25:50 2014] [error] Can't use string ("PerlBlog::Controller::Auths") as a HASH ref while "strict refs" in use at C:/strawberry/perl/site/bin/../lib/Mojo.pm line 46.
+
+[Thu Jul 10 11:25:50 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:25:50 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:25:50 2014] [debug] Rendering cached inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:25:50 2014] [debug] Rendering cached inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:25:50 2014] [debug] 500 Internal Server Error (0.008316s, 120.250/s).
+[Thu Jul 10 11:25:50 2014] [debug] GET "/".
+[Thu Jul 10 11:25:50 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:25:50 2014] [error] Can't use string ("PerlBlog::Controller::Auths") as a HASH ref while "strict refs" in use at C:/strawberry/perl/site/bin/../lib/Mojo.pm line 46.
+
+[Thu Jul 10 11:25:50 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:25:50 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:25:50 2014] [debug] Rendering cached inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:25:50 2014] [debug] Rendering cached inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:25:50 2014] [debug] 500 Internal Server Error (0.008482s, 117.897/s).
+[Thu Jul 10 11:25:51 2014] [debug] GET "/".
+[Thu Jul 10 11:25:51 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:25:51 2014] [error] Can't use string ("PerlBlog::Controller::Auths") as a HASH ref while "strict refs" in use at C:/strawberry/perl/site/bin/../lib/Mojo.pm line 46.
+
+[Thu Jul 10 11:25:51 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:25:51 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:25:51 2014] [debug] Rendering cached inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:25:51 2014] [debug] Rendering cached inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:25:51 2014] [debug] 500 Internal Server Error (0.009034s, 110.693/s).
+[Thu Jul 10 11:25:51 2014] [debug] GET "/".
+[Thu Jul 10 11:25:51 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:25:51 2014] [error] Can't use string ("PerlBlog::Controller::Auths") as a HASH ref while "strict refs" in use at C:/strawberry/perl/site/bin/../lib/Mojo.pm line 46.
+
+[Thu Jul 10 11:25:51 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:25:51 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:25:51 2014] [debug] Rendering cached inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:25:51 2014] [debug] Rendering cached inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:25:51 2014] [debug] 500 Internal Server Error (0.008447s, 118.385/s).
+[Thu Jul 10 11:25:51 2014] [debug] GET "/".
+[Thu Jul 10 11:25:51 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:25:51 2014] [error] Can't use string ("PerlBlog::Controller::Auths") as a HASH ref while "strict refs" in use at C:/strawberry/perl/site/bin/../lib/Mojo.pm line 46.
+
+[Thu Jul 10 11:25:51 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:25:51 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:25:51 2014] [debug] Rendering cached inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:25:51 2014] [debug] Rendering cached inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:25:51 2014] [debug] 500 Internal Server Error (0.008490s, 117.786/s).
+[Thu Jul 10 11:26:58 2014] [debug] GET "/".
+[Thu Jul 10 11:26:58 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:26:58 2014] [error] Can't use string ("PerlBlog::Controller::Auths") as a HASH ref while "strict refs" in use at C:/strawberry/perl/site/bin/../lib/Mojo.pm line 46.
+
+[Thu Jul 10 11:26:58 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:26:58 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:26:58 2014] [debug] Rendering cached inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:26:58 2014] [debug] Rendering cached inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:26:58 2014] [debug] 500 Internal Server Error (0.008351s, 119.746/s).
+[Thu Jul 10 11:27:00 2014] [debug] Your secret passphrase needs to be changed!!!
+[Thu Jul 10 11:27:00 2014] [debug] GET "/".
+[Thu Jul 10 11:27:00 2014] [error] syntax error at C:/Users/Morf/Documents/GitHub/perl_blog/script/../lib/PerlBlog/Controller/Feed.pm line 8, near "use 'PerlBlog::Controller::Auths'"
+Compilation failed in require at (eval 270) line 1.
+
+[Thu Jul 10 11:27:00 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:27:00 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:27:00 2014] [debug] Rendering inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:27:00 2014] [debug] Rendering inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:27:00 2014] [debug] 500 Internal Server Error (0.024663s, 40.547/s).
+[Thu Jul 10 11:31:14 2014] [debug] Your secret passphrase needs to be changed!!!
+[Thu Jul 10 11:31:14 2014] [debug] GET "/".
+[Thu Jul 10 11:31:14 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:31:14 2014] [error] Can't use string ("PerlBlog::Controller::Auths") as a HASH ref while "strict refs" in use at C:/strawberry/perl/site/bin/../lib/Mojo.pm line 46.
+
+[Thu Jul 10 11:31:14 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:31:14 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:31:14 2014] [debug] Rendering inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:31:14 2014] [debug] Rendering inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:31:14 2014] [debug] 500 Internal Server Error (0.025597s, 39.067/s).
+[Thu Jul 10 11:31:15 2014] [debug] GET "/".
+[Thu Jul 10 11:31:15 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:31:15 2014] [error] Can't use string ("PerlBlog::Controller::Auths") as a HASH ref while "strict refs" in use at C:/strawberry/perl/site/bin/../lib/Mojo.pm line 46.
+
+[Thu Jul 10 11:31:15 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:31:15 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:31:15 2014] [debug] Rendering cached inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:31:15 2014] [debug] Rendering cached inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:31:15 2014] [debug] 500 Internal Server Error (0.008481s, 117.911/s).
+[Thu Jul 10 11:31:17 2014] [debug] GET "/".
+[Thu Jul 10 11:31:17 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:31:17 2014] [error] Can't use string ("PerlBlog::Controller::Auths") as a HASH ref while "strict refs" in use at C:/strawberry/perl/site/bin/../lib/Mojo.pm line 46.
+
+[Thu Jul 10 11:31:17 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:31:17 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:31:17 2014] [debug] Rendering cached inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:31:17 2014] [debug] Rendering cached inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:31:17 2014] [debug] 500 Internal Server Error (0.008442s, 118.455/s).
+[Thu Jul 10 11:31:32 2014] [debug] GET "/".
+[Thu Jul 10 11:31:32 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:31:32 2014] [error] Can't use string ("PerlBlog::Controller::Auths") as a HASH ref while "strict refs" in use at C:/strawberry/perl/site/bin/../lib/Mojo.pm line 46.
+
+[Thu Jul 10 11:31:32 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:31:32 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:31:32 2014] [debug] Rendering cached inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:31:32 2014] [debug] Rendering cached inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:31:32 2014] [debug] 500 Internal Server Error (0.008387s, 119.232/s).
+[Thu Jul 10 11:31:33 2014] [debug] Your secret passphrase needs to be changed!!!
+[Thu Jul 10 11:31:33 2014] [debug] GET "/".
+[Thu Jul 10 11:31:33 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:31:33 2014] [error] Can't use string ("PerlBlog::Controller::Auths") as a HASH ref while "strict refs" in use at C:/strawberry/perl/site/bin/../lib/Mojo.pm line 46.
+
+[Thu Jul 10 11:31:33 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:31:33 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:31:33 2014] [debug] Rendering inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:31:33 2014] [debug] Rendering inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:31:33 2014] [debug] 500 Internal Server Error (0.025724s, 38.874/s).
+[Thu Jul 10 11:31:35 2014] [debug] GET "/".
+[Thu Jul 10 11:31:35 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:31:35 2014] [error] Can't use string ("PerlBlog::Controller::Auths") as a HASH ref while "strict refs" in use at C:/strawberry/perl/site/bin/../lib/Mojo.pm line 46.
+
+[Thu Jul 10 11:31:35 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:31:35 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:31:35 2014] [debug] Rendering cached inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:31:35 2014] [debug] Rendering cached inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:31:35 2014] [debug] 500 Internal Server Error (0.008486s, 117.841/s).
+[Thu Jul 10 11:31:45 2014] [info] Listening at "http://*:3000".
+[Thu Jul 10 11:31:49 2014] [debug] Your secret passphrase needs to be changed!!!
+[Thu Jul 10 11:31:49 2014] [debug] GET "/".
+[Thu Jul 10 11:31:49 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:31:49 2014] [error] Can't use string ("PerlBlog::Controller::Auths") as a HASH ref while "strict refs" in use at C:/strawberry/perl/site/bin/../lib/Mojo.pm line 46.
+
+[Thu Jul 10 11:31:49 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:31:49 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:31:49 2014] [debug] Rendering inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:31:49 2014] [debug] Rendering inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:31:49 2014] [debug] 500 Internal Server Error (0.026012s, 38.444/s).
+[Thu Jul 10 11:31:50 2014] [debug] GET "/".
+[Thu Jul 10 11:31:50 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:31:50 2014] [error] Can't use string ("PerlBlog::Controller::Auths") as a HASH ref while "strict refs" in use at C:/strawberry/perl/site/bin/../lib/Mojo.pm line 46.
+
+[Thu Jul 10 11:31:50 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:31:50 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:31:50 2014] [debug] Rendering cached inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:31:50 2014] [debug] Rendering cached inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:31:50 2014] [debug] 500 Internal Server Error (0.008446s, 118.399/s).
+[Thu Jul 10 11:32:06 2014] [debug] GET "/".
+[Thu Jul 10 11:32:06 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:32:06 2014] [error] Can't use string ("PerlBlog::Controller::Auths") as a HASH ref while "strict refs" in use at C:/strawberry/perl/site/bin/../lib/Mojo.pm line 46.
+
+[Thu Jul 10 11:32:06 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:32:06 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:32:06 2014] [debug] Rendering cached inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:32:06 2014] [debug] Rendering cached inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:32:06 2014] [debug] 500 Internal Server Error (0.008072s, 123.885/s).
+[Thu Jul 10 11:32:07 2014] [debug] Your secret passphrase needs to be changed!!!
+[Thu Jul 10 11:32:07 2014] [debug] GET "/".
+[Thu Jul 10 11:32:07 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:32:07 2014] [error] Can't call method "session" on an undefined value at C:/Users/Morf/Documents/GitHub/perl_blog/script/../lib/PerlBlog/Controller/Auths.pm line 37.
+
+[Thu Jul 10 11:32:07 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:32:07 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:32:07 2014] [debug] Rendering inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:32:07 2014] [debug] Rendering inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:32:07 2014] [debug] 500 Internal Server Error (0.025875s, 38.647/s).
+[Thu Jul 10 11:33:31 2014] [debug] Your secret passphrase needs to be changed!!!
+[Thu Jul 10 11:33:31 2014] [debug] GET "/".
+[Thu Jul 10 11:33:31 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:33:31 2014] [error] Can't call method "session" on an undefined value at C:/Users/Morf/Documents/GitHub/perl_blog/script/../lib/PerlBlog/Controller/Auths.pm line 37.
+
+[Thu Jul 10 11:33:31 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:33:31 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:33:31 2014] [debug] Rendering inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:33:31 2014] [debug] Rendering inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:33:31 2014] [debug] 500 Internal Server Error (0.025553s, 39.134/s).
+[Thu Jul 10 11:33:31 2014] [debug] Your secret passphrase needs to be changed!!!
+[Thu Jul 10 11:33:34 2014] [debug] GET "/".
+[Thu Jul 10 11:33:34 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:33:34 2014] [error] Can't call method "session" on an undefined value at C:/Users/Morf/Documents/GitHub/perl_blog/script/../lib/PerlBlog/Controller/Auths.pm line 37.
+
+[Thu Jul 10 11:33:34 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:33:34 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:33:34 2014] [debug] Rendering inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:33:34 2014] [debug] Rendering inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:33:34 2014] [debug] 500 Internal Server Error (0.025778s, 38.793/s).
+[Thu Jul 10 11:33:46 2014] [debug] GET "/".
+[Thu Jul 10 11:33:46 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:33:46 2014] [error] Can't call method "session" on an undefined value at C:/Users/Morf/Documents/GitHub/perl_blog/script/../lib/PerlBlog/Controller/Auths.pm line 37.
+
+[Thu Jul 10 11:33:46 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:33:46 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:33:46 2014] [debug] Rendering cached inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:33:46 2014] [debug] Rendering cached inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:33:46 2014] [debug] 500 Internal Server Error (0.008021s, 124.673/s).
+[Thu Jul 10 11:33:48 2014] [debug] Your secret passphrase needs to be changed!!!
+[Thu Jul 10 11:33:48 2014] [debug] GET "/".
+[Thu Jul 10 11:33:48 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:33:48 2014] [error] Can't call method "render" on an undefined value at C:/Users/Morf/Documents/GitHub/perl_blog/script/../lib/PerlBlog/Controller/Feed.pm line 25.
+
+[Thu Jul 10 11:33:48 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:33:48 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:33:48 2014] [debug] Rendering inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:33:48 2014] [debug] Rendering inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:33:48 2014] [debug] 500 Internal Server Error (0.025634s, 39.011/s).
+[Thu Jul 10 11:34:29 2014] [debug] GET "/".
+[Thu Jul 10 11:34:29 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:34:29 2014] [error] Can't call method "render" on an undefined value at C:/Users/Morf/Documents/GitHub/perl_blog/script/../lib/PerlBlog/Controller/Feed.pm line 25.
+
+[Thu Jul 10 11:34:29 2014] [debug] Template "exception.development.html.ep" not found.
+[Thu Jul 10 11:34:29 2014] [debug] Template "exception.html.ep" not found.
+[Thu Jul 10 11:34:29 2014] [debug] Rendering cached inline template "569839bd27413e47e26c8476bacb2540".
+[Thu Jul 10 11:34:29 2014] [debug] Rendering cached inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Thu Jul 10 11:34:29 2014] [debug] 500 Internal Server Error (0.007639s, 130.907/s).
+[Thu Jul 10 11:34:30 2014] [debug] Your secret passphrase needs to be changed!!!
+[Thu Jul 10 11:34:30 2014] [debug] GET "/".
+[Thu Jul 10 11:34:30 2014] [debug] Routing to controller "PerlBlog::Controller::Feed" and action "main".
+[Thu Jul 10 11:34:30 2014] [debug] Rendering template "feed/main.html.ep".
+[Thu Jul 10 11:34:30 2014] [debug] Rendering template "layouts/default.html.ep".
+[Thu Jul 10 11:34:30 2014] [debug] 200 OK (0.006371s, 156.961/s).

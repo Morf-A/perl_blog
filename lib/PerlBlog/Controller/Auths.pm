@@ -33,7 +33,12 @@ sub delete {
 
 sub check {
 
-    shift->session('id') ? 1 : 0;
+    my $self = shift;
+    unless($self->session('id')) {
+        $self->redirect_to('initial_form');
+     
+    }
+    #shift->session('id') ? 1 : 0;
 }
 
 1;

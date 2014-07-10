@@ -5,15 +5,13 @@ use warnings;
 use v5.10;
 
 use base 'Mojolicious::Controller';
+use PerlBlog::Controller::Auths;
 
-sub check_auths {
+sub main {
     
     my $self = shift;
-    unless($self->session('id')) {
-        $self->redirect_to('initial_form');
-     
-    }
-     
+    PerlBlog::Controller::Auths::check($self);
+    
     $self->render();
     
     #my $user = PerlBlog::Controller::Auths

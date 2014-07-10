@@ -60,5 +60,4 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 *.log
-*.log
-*.log
+log/development.log

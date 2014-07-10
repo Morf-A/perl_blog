@@ -27,7 +27,7 @@ sub startup {
     # Часть сайта после авторизации
     
    # my $rn = $r->bridge('/feed')->to('auths#check');
-    $r->route('/')->to('feed#check_auths')->name('feed');
+    $r->route('/')->to('feed#main')->name('feed');
     
 
     
