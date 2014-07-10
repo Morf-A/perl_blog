@@ -2,7 +2,40 @@
 
 <center>
 <h1>Hello, <%= $userName %>!</h1>
-<form method='POST' action='<%= url_for "auths_delete" %>'>
-      <input type='submit' value='Exit'/>     
-</form>
+<table border = 1>
+    <tr>
+        <td>
+            <table>
+                <tr><td>
+                    
+                        <form method='GET' action='<%= url_for "post_form_create" %>'>
+                              <input type='submit' value='Создать пост'/>     
+                        </form>
+                </td></tr> 
+                <tr><td>
+                 --------------
+                </td></tr>
+                <tr><td>     
+                        <form method='POST' action='<%= url_for "auths_delete" %>'>
+                              <input type='submit' value='Exit'/>     
+                        </form>
+                 
+                </td></tr> 
+            </table>
+        </td>
+        <td>
+            <table >
+                <tr><td>
+                    Пост 1
+                </td></tr>
+                <tr><td>
+                    Пост 2
+                </td></tr>
+                 <tr><td>
+                    Пост 3
+                </td></tr>
+            </table>
+        </td>
+    </tr>
+</table>
 </center>

@@ -1,0 +1,12 @@
+% layout 'default';
+
+<center>
+<h1>Пост: </h1>
+Содержание:
+</br></br></br>
+
+Создать комментарий:
+<form method='POST' action='<%= url_for "comment_create" %>'>
+      <input type='submit' value='Create'/>     
+</form>
+</center>
