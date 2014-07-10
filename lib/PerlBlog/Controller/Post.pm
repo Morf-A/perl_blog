@@ -27,15 +27,12 @@ sub create {
     my $title     = $self->param('title');
     my $content   = $self->param('content');
     my $preview   = $self->param('preview');
-    
-    
-    
-    #my @tagIds = $self->param('tagIds') 
-    
-    print Data::Dumper->dump($preview);
+    my @tagIds       = $self->param('tagsToController');
+
     
     my $author = $self->session('login');
     
+    #  my $user_id = PerlBlog::Model::User->insert(\%post);
     
     $self->redirect_to('/');
 }

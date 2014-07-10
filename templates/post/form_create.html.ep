@@ -40,8 +40,24 @@
             }
         });
         
-        $('#post_create').on('submit', function(){
-           
+        $('#post_create').on('submit', function(event){
+            var uniqueTagsKeys = [];
+
+            $.each($('.tagsSelect :selected'), function( key, value ) {
+                uniqueTagsKeys[$(value).val()] = true;
+            });
+
+            var uniqueTags = [];
+            for(var key in uniqueTagsKeys) {
+                  if(uniqueTagsKeys.hasOwnProperty(key)) { //to be safe
+                    uniqueTags.push(key);
+                  }
+            }
+            
+            for( var i = 0; i < uniqueTags.length; i++) {
+                $('#mainTable').append("<input type='hidden' name='tagsToController' value=" + "'" + uniqueTags[i] + "'" + " /> ");
+            }
+
             return true;
         });
     });
@@ -66,13 +82,13 @@
 <center>
 <h1>Создание поста</h1>
 <form id='post_create' method='POST' action='<%= url_for "post_create" %>'>
-    <table>
+    <table id='mainTable'>
         <tr>
             <td>
                 Заголовок:
             </td>
             <td >
-                <input type='text' name='title' value='Тестовый заголовок' />
+                <input type='text' name='title' value='Test title' />
             </td>
         </tr>
         
@@ -81,7 +97,7 @@
                 Превью:          
             </td>
             <td >
-                <textarea name='preview'>Тестовое превью бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла 
+                <textarea name='preview'>Preview Test Preview Test Preview Test Preview Test Preview Test Preview Test Preview Test Preview Test Preview Test Preview Test Preview Test Preview Test 
                 </textarea>      
             </td>
         </tr>
@@ -91,7 +107,7 @@
                 Содержание:          
             </td>
             <td >
-                <textarea name='content'>Тестовое содержание бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла
+                <textarea name='content'>Content Test Content Test Content Test Content Test Content Test Content Test Content Test Content Test Content Test Content Test Content Test Content Test
                 </textarea>       
             </td>
         </tr>
@@ -136,6 +152,5 @@
         </tr>
         
     </table>
-        
 </form>
 </center>

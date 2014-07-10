@@ -14,7 +14,7 @@ sub create {
     my $password  = $self->param('password');
     my $password2 = $self->param('password2');
 
-    # Validation
+
     my $err_msg = 0;
     
     CHECK: {
@@ -38,7 +38,7 @@ sub create {
 
     }
 
-    # Show error
+
     if ($err_msg) {
         $self->flash(
             error        => $err_msg,
