@@ -1,3 +1,4 @@
+/log/
 /storage/
 /blib/
 /.build/
@@ -58,4 +59,6 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
+*.log
+*.log
 *.log

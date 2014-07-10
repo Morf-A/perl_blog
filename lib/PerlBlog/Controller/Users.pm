@@ -15,7 +15,7 @@ sub create {
     my $password2 = $self->param('password2');
 
     # Validation
-    my $err_msg;
+    my $err_msg = 0;
     
     CHECK: {
 
@@ -64,9 +64,10 @@ sub create {
 
     # Login User
     $self->session(
-        user_id => $user_id,
+        id => $user_id,
         login   => $login
     )->redirect_to('feed');
+
     
 }
 
