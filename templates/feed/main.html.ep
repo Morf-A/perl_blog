@@ -1,7 +1,7 @@
 % layout 'default';
 
 <center>
-<h1>Hello2, User</h1>
+<h1>Hello, <%= $userName %>!</h1>
 <form method='POST' action='<%= url_for "auths_delete" %>'>
       <input type='submit' value='Exit'/>     
 </form>

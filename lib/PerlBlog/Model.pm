@@ -31,8 +31,24 @@ sub init {
                convert       => 'upper'
         );
 
+        # Создаем таблицы для работы
         unless ( eval {$DB->select('user')} ) {
-            $class->create_db_structure();
+            $class->create_db_user();
+        }
+        unless ( eval {$DB->select('post')} ) {
+            $class->create_db_post();
+        }
+        unless ( eval {$DB->select('posts_tags')} ) {
+            $class->create_db_posts_tags();
+        }
+        unless ( eval {$DB->select('tag')} ) {
+            $class->create_db_tag();
+        }
+        unless ( eval {$DB->select('category')} ) {
+            $class->create_db_category();
+        }
+        unless ( eval {$DB->select('comment')} ) {
+            $class->create_db_comment();
         }
     }
 
@@ -44,35 +60,85 @@ sub db {
     croak "You should init model first!";
 }
 
-sub create_db_structure {
+#user
+sub create_db_user {
     my $class = shift;
     
     
     $class->db->query(
-            'CREATE TABLE user (
-                id integer NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
-                login text NOT NULL UNIQUE,
-                password text NOT NULL
-            )'
+        'CREATE TABLE user (
+            id integer NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
+            login text NOT NULL UNIQUE,
+            password text NOT NULL
+        )'
     );
-    
-    # $class->db->query(
-            # 'CREATE TABLE notes (note_id INTEGER NOT NULL PRIMARY KEY ASC AUTOINCREMENT,
-                                      # user_id INTEGER NOT NULL
-                                              # CONSTRAINT fk_user_id
-                                              # REFERENCES user(user_id)
-                                              # ON DELETE RESTRICT,
-                                      # is_important INTEGER NOT NULL DEFAULT(0),
-                                      # is_todo      INTEGER NOT NULL DEFAULT(0),
-                                      # is_deleted   INTEGER NOT NULL DEFAULT(0),
-                                      # text     TEXT NOT NULL,
-                                      # date INTEGER NOT NULL);'
-    # );
-
-    # $class->db->query(
-        # "INSERT INTO users(login, password) VALUES('user', 'password');"
-    # );
 }
 
+#post
+sub create_db_post {
+    my $class = shift;
+    
+    
+    $class->db->query(
+        'CREATE TABLE post (
+            id integer NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
+            title text NOT NULL,content text,preview text,
+            author_id integer NOT NULL
+        )'
+    );
+}
+
+#posts_tags
+sub create_db_posts_tags {
+    my $class = shift;
+    
+    
+    $class->db->query(
+        'CREATE TABLE posts_tags (
+            post_id integer,
+            tag_id integer,
+            PRIMARY KEY (post_id,tag_id)
+        )'
+    );
+}
+
+#tags
+sub create_db_tag {
+    my $class = shift;
+    
+    
+    $class->db->query(
+        'CREATE TABLE tag (
+            id integer NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
+            category_id integer,
+            name text NOT NULL
+        )'
+    );
+}
+
+#category
+sub create_db_category {
+    my $class = shift;
+    
+    
+    $class->db->query(
+        'CREATE TABLE category (
+            id integer NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
+            name text NOT NULL
+        )'
+    );
+}
+
+#commetn
+sub create_db_comment {
+    my $class = shift;
+    
+    $class->db->query(
+        'CREATE TABLE comment (
+            id integer NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
+            text text,post_id integer
+        )'
+    );
+}
 1;
 

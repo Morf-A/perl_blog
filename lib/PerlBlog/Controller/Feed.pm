@@ -12,10 +12,7 @@ sub main {
     my $self = shift;
     PerlBlog::Controller::Auths::check($self);
     
-    $self->render();
-    
-    #my $user = PerlBlog::Controller::Auths
-
+    $self->render(userName => $self->session('login'));
 }
 
 
