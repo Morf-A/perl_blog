@@ -153,4 +153,5 @@
         
     </table>
 </form>
+<h1><span style="color: red" ><%= flash 'error' %></span><h1>
 </center>
