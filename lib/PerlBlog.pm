@@ -15,25 +15,24 @@ sub startup {
 
     $r->namespaces(['PerlBlog::Controller']);
   
+  
+    my $rn = $r->bridge('/')->to('auths#check')->name('initial_form');
+    
+    $rn->route->to('feed#main')->name('feed'); #viewable
+  
     #авторизация и создание пользователя
-    $r->route('/index')->to('initial_form')->name('initial_form'); #viewable
-    $r->route('/login')->via('post')->to('auths#create')->name('auths_create');
-    $r->route('/logout')->to('auths#delete')->name('auths_delete');
-    $r->route('/signup')->via('post')->to('users#create')->name('users_create');
+    $rn->route('/login')->via('post')->to('auths#create')->name('auths_create');
+    $rn->route('/logout')->to('auths#delete')->name('auths_delete');
+    $rn->route('/signup')->via('post')->to('users#create')->name('users_create');
 
-    # Часть сайта после авторизации
-    
-    #feed
-    $r->route('/')->to('feed#main')->name('feed'); #viewable
-    
     #post
 
-    $r->route('/post/new')->via('get')->to('post#form_create')->name('post_form_create'); #viewable
-    $r->route('/post/new')->via('post')->to('post#create')->name('post_create');
-    $r->route('/post/:id')->over(id => qr/^\d+$/)->via('get')->to('post#show')->name('post_show'); #viewable
+    $rn->route('/post/new')->via('get')->to('post#form_create')->name('post_form_create'); #viewable
+    $rn->route('/post/new')->via('post')->to('post#create')->name('post_create');
+    $rn->route('/post/:id')->over(id => qr/^\d+$/)->via('get')->to('post#show')->name('post_show'); #viewable
     
     #comment
-    $r->route('/comment')->via('post')->to('comment#create')->name('comment_create');
+    $rn->route('/comment')->via('post')->to('comment#create')->name('comment_create');
     
     
     
