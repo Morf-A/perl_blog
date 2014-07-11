@@ -8,16 +8,13 @@ use Data::Dumper;
 
 sub main {
     my $self = shift;
-    # Пользователь
-    my $userName = $self->session('login');
 
-    # Посты
-    my $allPosts = PerlBlog::Model::Post->get_posts();
-  
-    
-    print Dumper($allPosts);
-    
-    $self->render(userName=>$userName, posts=>$allPosts);  
+    my $userName = $self->session('login');
+    my $tagId    = $self->param('id');
+    my $tagname  = $self->param('tag_name');
+    my $allPosts = PerlBlog::Model::Post->get_posts_by_tag_id($tagId);
+
+    $self->render(userName=>$userName, posts=>$allPosts, tagname=>$tagname);  
 }
 
 

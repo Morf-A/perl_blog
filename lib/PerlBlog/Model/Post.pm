@@ -11,6 +11,23 @@ sub get_posts {
     return $self->select()->hashes();
 }
 
+sub get_posts_by_tag_id {
+    my $self = shift;
+    my ($tagId) = @_;
+    return $self->plain_query('
+        SELECT 
+            post.id as id,
+            post.title as title,
+            post.preview as preview
+        FROM 
+            post,
+            posts_tags
+        WHERE 
+            posts_tags.post_id = id AND
+            posts_tags.tag_id =' .  $tagId
+    )->hashes();
+}
+
 sub get_all_posts_info {
 
     my $self = shift;
