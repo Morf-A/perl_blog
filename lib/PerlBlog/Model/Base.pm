@@ -31,5 +31,11 @@ sub delete {
     $db->delete($class->table_name, @_) or die $db->error();
 }
 
+sub plain_query {
+    my $class = shift;
+    my $db = PerlBlog::Model->db;
+    $db->query(@_);
+}
+
 1;
 __END__

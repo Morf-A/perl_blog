@@ -23,17 +23,30 @@
                 </td></tr> 
             </table>
         </td>
-        <td>
-            <table >
-                <tr><td>
-                    Пост 1
-                </td></tr>
-                <tr><td>
-                    Пост 2
-                </td></tr>
-                 <tr><td>
-                    Пост 3
-                </td></tr>
+        <td> 
+            <table>
+                % for( my $i = 0; $i < scalar keys $posts; $i++) {
+                    <tr><td>
+                        <a href="<%=
+                                '/post/' . $posts->[$i]->{'id'};
+                        %>">
+                            <h2 style="color: green">
+                                <%=
+                                    $posts->[$i]->{'title'};
+                                %>
+                            </h2>
+                        </a>
+                    </td></tr>
+                    <tr><td style="word-wrap: break-word;">
+                        <div style="width : 500px;"><%=
+                            $posts->[$i]->{'preview'};
+                        %>
+                        </div>
+                    </td></tr>
+                    <tr><td>
+                        ----------------------------------------------------------------------------------
+                    </td></tr>   
+                % }
             </table>
         </td>
     </tr>

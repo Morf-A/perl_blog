@@ -1,8 +1,55 @@
 % layout 'default';
 
 <center>
-<h1>Пост: </h1>
-Содержание:
+<table>
+    <tr><td>
+        <h2 style="color: green">
+            <%=
+                $post->{'title'};
+            %>
+        </h2>
+    </td></tr>
+    <tr><td style="word-wrap: break-word;">
+        <div style="width : 500px;">
+            <%=
+                $post->{'preview'};
+            %>
+            <br /><br />
+            <%=
+                $post->{'content'};
+            %>
+            <br /><br />
+        </div>
+    </td></tr>
+    <tr><td> Автор: 
+        <%=
+            $post->{'author_name'};
+        %>
+        <br /><br />
+    </td></tr>
+    <tr><td> Категория:  
+            <%=
+                $post->{'category_name'};
+            %>
+            <br /><br />
+    </td></tr>
+    <tr>
+        <td> Теги: 
+        % foreach my $key (keys $post->{'tags'}) {
+        <a href='
+            <%=
+                '/tag/' . $key 
+            %>
+        '>
+            <%=
+                $post->{'tags'}->{$key};
+            %>
+        </a>
+        % }
+       
+        </td>
+    </tr>
+</table>
 </br></br></br>
 
 Создать комментарий:

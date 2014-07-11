@@ -4,10 +4,19 @@ use strict;
 use warnings;
 use v5.10;
 use base 'Mojolicious::Controller';
+use Data::Dumper;
 
 sub main {
     my $self = shift;
-    $self->render(userName => $self->session('login'));
+    # Пользователь
+    my $userName = $self->session('login');
+
+    # Посты
+    my $allPosts = PerlBlog::Model::Post->get_posts();
+    
+    print Dumper($allPosts);
+    
+    $self->render(userName=>$userName, posts=>$allPosts);  
 }
 
 

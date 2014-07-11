@@ -61,9 +61,25 @@ sub create {
 }
 
 sub show {
+    my $self   = shift;
+    my $postId = $self->param('id');
+
+    my $postData = PerlBlog::Model::Post->get_all_posts_info($postId);
     
-    my $self = shift;
+    my %preparedPost;
+    for(my $i = 0; $i < scalar keys $postData; $i++) {       
+        $preparedPost{'tags'}{$postData->[$i]->{'tagid'}}  = $postData->[$i]->{'tagname'}; 
+    }
+    $preparedPost{'id'}       = $postData->[0]->{'id'}; 
+    $preparedPost{'title'}       = $postData->[0]->{'title'}; 
+    $preparedPost{'preview'}     = $postData->[0]->{'preview'}; 
+    $preparedPost{'content'}     = $postData->[0]->{'content'}; 
+    $preparedPost{'author_id'}   = $postData->[0]->{'authorid'}; 
+    $preparedPost{'category_id'} = $postData->[0]->{'categoryid'}; 
+    $preparedPost{'category_name'} = $postData->[0]->{'categoryname'}; 
+    $preparedPost{'author_name'} = $postData->[0]->{'authorname'}; 
     
+    $self->render(post => \%preparedPost);
 }
 
 
