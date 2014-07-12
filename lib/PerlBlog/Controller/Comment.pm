@@ -14,10 +14,19 @@ sub create {
         author_id => $self->param('authorId'),
         post_id   => $self->param('postId')
     );
-    PerlBlog::Model::Comment->insert(\%comment);
+    
+    my $commentId = PerlBlog::Model::Comment->insert(\%comment);
+    #Возвращаем json данные обратно на страницу
+    $self->render(json => {commentId => $commentId});
+    
     return 1;
 }
 
+sub delete {
+    my $self = shift;
+    my $commentId = $self->param('commentId');
+    PerlBlog::Model::Comment->delete({id=>$commentId});
+}
 
 1;
 

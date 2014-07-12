@@ -14,7 +14,9 @@ sub get_comments_by_post_id {
     return $self->plain_query('
         SELECT 
             comment.text as comment_text,
-            user.login as author_name
+            user.login as author_name,
+            user.id as author_id,
+            comment.id as comment_id
         FROM 
             comment, user
         WHERE 

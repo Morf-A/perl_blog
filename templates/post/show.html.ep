@@ -2,48 +2,74 @@
 <script>
 
 $(function(){
+
+    var delCommentFunc = function(event){
+        var ok = confirm('Вы действительно хотите удалить комментарий?');
+        if(ok) {
+            
+            $.ajax({
+                type: "post",
+                url: '<%= url_for "comment_delete" %>',
+                data: {
+                    commentId: $(event.target).attr('commentid'),
+                },
+            });
+            $(event.target).parents('tr').remove();
+        }
+    };
+    
+    $('.commentDel').on('click', delCommentFunc);
+    
     $('#commentAdd').on('click',function(){
+    
         var commentVal = $('#commentArea').val();
+        $('#commentArea').val('');
+        
         if(commentVal === '') {
             alert('Не заполнен текст комментария');
             return;
         }
-        // Рисуем добавленный коммент
-        $('#commentsTable').append(
-            '<tr><td valign="top">Автор: ' + 
-            '<%= $currentUserName %>' +
-            '<br/>-------------</td><td style="word-wrap: break-word;"><div style="width : 300px;">' +
-            commentVal + 
-            '<br/>---------------------------------------</div></td></tr>'
-        );
         
         // Отключаем кнопку отправки коммента
-        $('#commentAdd').attr('disabled', true);
-        $('#commentArea').attr('disabled', true);
+        $('#commentAdd').attr('disabled', true);  
         
         // Отправляем запрос на добавление комментария
-        console.log('start send');
+        
+        $.ajax({
+            type: "post",
+            url: '<%= url_for "comment_create" %>',
+            data: {
+                comment: commentVal,
+                authorId: <%= $currentUserId %>,
+                postId:   <%= $post->{'id'} 
+                %>
+            }
+        }).done(function(response) {
+            // Рисуем добавленный коммент
+            
+            $('#commentsTable').append(
+                '<tr><td valign="top">Автор: ' + 
+                '<%= $currentUserName %>' +
+                '<br/>-------------</td><td style="word-wrap: break-word;"><div style="width : 300px;">' +
+                commentVal + 
+                '<br/>---------------------------------------</div></td><td valign="top">' +
+                '<input type="submit" class="commentDel" value="Удалить" commentid=' + 
+                response.commentId +
+                ' /></td></tr>'   
+            ); 
+
+            $('.commentDel').on('click', delCommentFunc);
+        });
+                
         setTimeout(function(){
-            $.ajax({
-                type: "post",
-                url: '<%= url_for "comment_create" %>',
-                data: {
-                    comment: $('#commentArea').val(),
-                    authorId: <%= $currentUserId %>,
-                    postId:   <%= $post->{'id'} 
-                    %>
-                },
-            });
-            $('#commentArea').attr('disabled', false);
             $('#commentAdd').attr('disabled', false);
-            console.log('end send');
         }, 3000);
     });
+    
 });
 
-
-
 </script>
+
 <center>
 <h3><a href = <%= url_for "feed" %> >На главную</a></h3>
 <table>
@@ -116,6 +142,13 @@ $(function(){
                    %>
                    <br/>---------------------------------------
                 </div>
+            </td>
+            <td valign='top'>
+                % if( $comments->[$i]->{'author_id'} == $currentUserId) {
+                    <input type='submit' class="commentDel" value='Удалить' commentid=<%= $comments->[$i]->{'comment_id'}
+                   %>
+                    />
+                %}
             </td>
         </tr>
     % }

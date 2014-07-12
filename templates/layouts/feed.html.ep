@@ -12,6 +12,21 @@
                     <td>
                         <table>
                             <tr><td>
+                                <form method='GET' action='<%= url_for "post_form_create" %>'>
+                                      <input type='submit' value='Создать пост'/>     
+                                </form>
+                            </td></tr> 
+                            <tr><td>
+                             --------------  
+                            </td></tr>
+                            <tr><td>
+                                <form method='GET' action='<%= url_for "post_form_delete" %>'>
+                                      <input type='submit' value='Удалить пост'/>     
+                                </form>
+                            </td></tr> 
+                            <tr><td>
+                            --------------
+                            <tr><td>
                                 <form method='GET' action='<%= url_for "tag_form_create" %>'>
                                       <input type='submit' value='Добавить тег'/>     
                                 </form>
@@ -35,21 +50,6 @@
                             <tr><td>
                                 <form method='GET' action='<%= url_for "category_form_delete" %>'>
                                       <input type='submit' value='Удалить категорию'/>     
-                                </form>
-                            </td></tr> 
-                            <tr><td>
-                            --------------
-                            <tr><td>
-                                <form method='GET' action='<%= url_for "post_form_create" %>'>
-                                      <input type='submit' value='Создать пост'/>     
-                                </form>
-                            </td></tr> 
-                            <tr><td>
-                             --------------  
-                            </td></tr>
-                            <tr><td>
-                                <form method='GET' action='<%= url_for "post_form_delete" %>'>
-                                      <input type='submit' value='Удалить пост'/>     
                                 </form>
                             </td></tr> 
                             <tr><td>

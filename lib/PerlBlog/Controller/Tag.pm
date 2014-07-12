@@ -26,7 +26,6 @@ sub form_create {
 
 sub create {
     my $self = shift;
-    
     my $name        = $self->param('name');
     my $categoryId  = $self->param('categoryId');
     

@@ -36,7 +36,7 @@ sub startup {
     $rn->route('/post/delete')->via('post')->to('post#delete')->name('post_delete');
     
     #comment
-    $rn->route('/comment')->via('post')->to('comment#create')->name('comment_create');
+    $rn->route('/post/show/:id')->via('post')->to('comment#create')->name('comment_create');
     $rn->route('/comment/delete')->via('post')->to('comment#delete')->name('comment_delete');
     
     #tags
