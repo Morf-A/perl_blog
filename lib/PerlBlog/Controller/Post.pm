@@ -12,7 +12,7 @@ sub form_create {
     my $self = shift;
     
     my $author = $self->session('login');
-    my $categories = PerlBlog::Model::Category->get_categories();
+    my $categories = PerlBlog::Model::Category->gat_categories_with_tags();
     my $tags = PerlBlog::Model::Tag->get_tags();
   
     $self->render(author=>$author, categories=>$categories, tags=>$tags);

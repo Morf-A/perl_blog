@@ -11,5 +11,18 @@ sub get_categories {
     return $self->select()->hashes();
 }
 
+sub gat_categories_with_tags {
+    my $self = shift;
+    return $self->plain_query('
+        SELECT DISTINCT
+            category.id as id,
+            category.name as name 
+        FROM 
+            category JOIN tag 
+        ON 
+            category.id = tag.category_id
+    ')->hashes();
+}
+
 1;
 

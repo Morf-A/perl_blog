@@ -47,9 +47,9 @@ sub startup {
     
     #category
     $rn->route('/category/new')->via('get')->to('category#form_create')->name('category_form_create');
-    $rn->route('/category/new')->via('post')->to('category#form_create')->name('category_create');
+    $rn->route('/category/new')->via('post')->to('category#create')->name('category_create');
     $rn->route('/category/delete')->via('get')->to('category#form_delete')->name('category_form_delete');
-    $rn->route('/category/delete')->via('post')->to('category#form_delete')->name('category_delete');
+    $rn->route('/category/delete')->via('post')->to('category#delete')->name('category_delete');
     
     # Init Model
     PerlBlog::Model->init({
