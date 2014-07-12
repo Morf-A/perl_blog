@@ -154,8 +154,10 @@ sub create_db_comment {
     
     $class->db->query(
         'CREATE TABLE comment (
-            id integer NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
-            text text,post_id integer
+            id integer NOT NULL PRIMARY KEY AUTOINCREMENT,
+            text text,
+            author_id integer NOT NULL,
+            post_id integer NOT NULL
         )'
     );
 }
