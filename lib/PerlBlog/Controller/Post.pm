@@ -61,30 +61,34 @@ sub create {
 }
 
 sub show {
-    my $self   = shift;
-    
+    my $self   = shift; 
     my $currentUserId = $self->session('id');
     my $currentUserName  = $self->session('login');
-
-    
     my $postId = $self->param('id');
-
     my $postData = PerlBlog::Model::Post->get_all_posts_info($postId);
-    
+
     my %preparedPost;
     for(my $i = 0; $i < scalar keys $postData; $i++) {       
         $preparedPost{'tags'}{$postData->[$i]->{'tagid'}}  = $postData->[$i]->{'tagname'}; 
     }
-    $preparedPost{'id'}       = $postData->[0]->{'id'}; 
-    $preparedPost{'title'}       = $postData->[0]->{'title'}; 
-    $preparedPost{'preview'}     = $postData->[0]->{'preview'}; 
-    $preparedPost{'content'}     = $postData->[0]->{'content'}; 
-    $preparedPost{'author_id'}   = $postData->[0]->{'authorid'}; 
-    $preparedPost{'category_id'} = $postData->[0]->{'categoryid'}; 
+    $preparedPost{'id'}            = $postData->[0]->{'postid'}; 
+    $preparedPost{'title'}         = $postData->[0]->{'title'}; 
+    $preparedPost{'preview'}       = $postData->[0]->{'preview'}; 
+    $preparedPost{'content'}       = $postData->[0]->{'content'}; 
+    $preparedPost{'author_id'}     = $postData->[0]->{'authorid'}; 
+    $preparedPost{'category_id'}   = $postData->[0]->{'categoryid'}; 
     $preparedPost{'category_name'} = $postData->[0]->{'categoryname'}; 
-    $preparedPost{'author_name'} = $postData->[0]->{'authorname'}; 
+    $preparedPost{'author_name'}   = $postData->[0]->{'authorname'}; 
     
-    $self->render(post => \%preparedPost, currentUserName => $currentUserName, currentUserId =>$currentUserId);
+    
+    my $comments = PerlBlog::Model::Comment->get_comments_by_post_id($postId);
+    
+    $self->render(
+        post => \%preparedPost,
+        currentUserName => $currentUserName,
+        currentUserId => $currentUserId,
+        comments => $comments
+    );
 }
 
 

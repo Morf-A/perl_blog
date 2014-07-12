@@ -3,13 +3,17 @@
 
 $(function(){
     $('#commentAdd').on('click',function(){
-
+        var commentVal = $('#commentArea').val();
+        if(commentVal === '') {
+            alert('Не заполнен текст комментария');
+            return;
+        }
         // Рисуем добавленный коммент
         $('#commentsTable').append(
-            '<tr><td valign="top">' + 
+            '<tr><td valign="top">Автор: ' + 
             '<%= $currentUserName %>' +
             '<br/>-------------</td><td style="word-wrap: break-word;"><div style="width : 300px;">' +
-            $('#commentArea').val() + 
+            commentVal + 
             '<br/>---------------------------------------</div></td></tr>'
         );
         
@@ -25,10 +29,10 @@ $(function(){
                 url: '<%= url_for "comment_create" %>',
                 data: {
                     comment: $('#commentArea').val(),
-                    authorId: '<%= $currentUserId %>',
+                    authorId: <%= $currentUserId %>,
                     postId:   <%= $post->{'id'} 
                     %>
-                }
+                },
             });
             $('#commentArea').attr('disabled', false);
             $('#commentAdd').attr('disabled', false);
@@ -99,39 +103,25 @@ $(function(){
             Комментарии:
         </td>
     </tr>
-    <tr>
-        <td>
-           Автор: 1
-           <br/>-------------
-        </td>
-        <td>
-           Коммент 1 
-           <br/>---------------------------------------
-        </td>
-    </tr>
-    <tr>
-        <td>
-           Автор: 2
-           <br/>-------------
-        </td>
-        <td>
-           Коммент 2
-           <br/>---------------------------------------
-        </td>
-    </tr>
-    <tr>
-        <td>
-           Автор: 3
-           <br/>-------------
-        </td>
-        <td>
-           Коммент 3
-           <br/>---------------------------------------
-        </td>
-    </tr>
+    % for( my $i = 0; $i < scalar keys $comments; $i++) {
+        <tr>
+            <td valign='top'>
+              Автор: <%= $comments->[$i]->{'author_name'}
+               %>
+               <br/>-------------
+            </td>
+            <td style="word-wrap: break-word;">
+                <div style="width : 300px;">
+                   <%= $comments->[$i]->{'comment_text'}
+                   %>
+                   <br/>---------------------------------------
+                </div>
+            </td>
+        </tr>
+    % }
 </table>
 <br />
-<textarea id='commentArea' cols='20' rows='5' wrap='hard'>
+<textarea id='commentArea' cols='30' rows='5' wrap='hard'>
 </textarea>
 <br />
     <input type='submit' id="commentAdd" value='Добавить комментарий'/>     
