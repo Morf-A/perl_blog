@@ -1,5 +1,45 @@
 % layout 'default';
+<script>
 
+$(function(){
+    $('#commentAdd').on('click',function(){
+
+        // Рисуем добавленный коммент
+        $('#commentsTable').append(
+            '<tr><td valign="top">' + 
+            '<%= $currentUserName %>' +
+            '<br/>-------------</td><td style="word-wrap: break-word;"><div style="width : 300px;">' +
+            $('#commentArea').val() + 
+            '<br/>---------------------------------------</div></td></tr>'
+        );
+        
+        // Отключаем кнопку отправки коммента
+        $('#commentAdd').attr('disabled', true);
+        $('#commentArea').attr('disabled', true);
+        
+        // Отправляем запрос на добавление комментария
+        console.log('start send');
+        setTimeout(function(){
+            $.ajax({
+                type: "post",
+                url: '<%= url_for "comment_create" %>',
+                data: {
+                    comment: $('#commentArea').val(),
+                    authorId: '<%= $currentUserId %>',
+                    postId:   <%= $post->{'id'} 
+                    %>
+                }
+            });
+            $('#commentArea').attr('disabled', false);
+            $('#commentAdd').attr('disabled', false);
+            console.log('end send');
+        }, 3000);
+    });
+});
+
+
+
+</script>
 <center>
 <h3><a href = <%= url_for "feed" %> >На главную</a></h3>
 <table>
@@ -51,10 +91,48 @@
         </td>
     </tr>
 </table>
-</br></br></br>
 
-Создать комментарий:
-<form method='POST' action='<%= url_for "comment_create" %>'>
-      <input type='submit' value='Create'/>     
-</form>
+<table id='commentsTable'>
+    <tr>
+        <td>
+            <br />
+            Комментарии:
+        </td>
+    </tr>
+    <tr>
+        <td>
+           Автор: 1
+           <br/>-------------
+        </td>
+        <td>
+           Коммент 1 
+           <br/>---------------------------------------
+        </td>
+    </tr>
+    <tr>
+        <td>
+           Автор: 2
+           <br/>-------------
+        </td>
+        <td>
+           Коммент 2
+           <br/>---------------------------------------
+        </td>
+    </tr>
+    <tr>
+        <td>
+           Автор: 3
+           <br/>-------------
+        </td>
+        <td>
+           Коммент 3
+           <br/>---------------------------------------
+        </td>
+    </tr>
+</table>
+<br />
+<textarea id='commentArea' cols='20' rows='5' wrap='hard'>
+</textarea>
+<br />
+    <input type='submit' id="commentAdd" value='Добавить комментарий'/>     
 </center>

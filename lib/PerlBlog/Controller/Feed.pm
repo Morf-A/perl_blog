@@ -10,12 +10,8 @@ sub main {
     my $self = shift;
     # Пользователь
     my $userName = $self->session('login');
-
     # Посты
     my $allPosts = PerlBlog::Model::Post->get_posts();
-    
-    print Dumper($allPosts);
-    
     $self->render(userName=>$userName, posts=>$allPosts);  
 }
 

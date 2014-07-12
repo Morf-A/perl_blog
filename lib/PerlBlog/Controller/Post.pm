@@ -62,6 +62,11 @@ sub create {
 
 sub show {
     my $self   = shift;
+    
+    my $currentUserId = $self->session('id');
+    my $currentUserName  = $self->session('login');
+
+    
     my $postId = $self->param('id');
 
     my $postData = PerlBlog::Model::Post->get_all_posts_info($postId);
@@ -79,7 +84,7 @@ sub show {
     $preparedPost{'category_name'} = $postData->[0]->{'categoryname'}; 
     $preparedPost{'author_name'} = $postData->[0]->{'authorname'}; 
     
-    $self->render(post => \%preparedPost);
+    $self->render(post => \%preparedPost, currentUserName => $currentUserName, currentUserId =>$currentUserId);
 }
 
 
