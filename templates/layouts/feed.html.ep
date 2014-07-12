@@ -5,6 +5,18 @@
         <script src='../../js/jquery-2.1.1.min.js'></script>
     </head>
     <body>
+        <script>
+        $(function(){
+            $('.postDel').on('click', function(event){
+                var ok = confirm('Вы действительно хотите удалить этот пост?');
+                if(ok) {
+                    var postID = $(event.target).attr('postid');
+                    $(event.target).closest('table[postid='+ postID + ']').remove();
+                }
+            });       
+        })
+
+        </script>
         <center>
             <%= content %>
             <table border = 1>
@@ -64,6 +76,9 @@
                     <td> 
                         <table>
                             % for( my $i = 0; $i < scalar keys $posts; $i++) {
+                            <table postid=<%=
+                                $posts->[$i]->{'id'};
+                            %>>
                                 <tr><td>
                                     <a href="<%=
                                             '/post/show/' . $posts->[$i]->{'id'};
@@ -81,9 +96,19 @@
                                     %>
                                     </div>
                                 </td></tr>
+                                % if(1) {
+                                <tr >
+                                    <td align="right">                                     
+                                       <input type='submit' class="postDel" value='Удалить' postid=<%=
+                                            $posts->[$i]->{'id'};
+                                        %> />
+                                    </td>
+                                </tr>
+                                 %}
                                 <tr><td>
                                     ----------------------------------------------------------------------------------
                                 </td></tr>   
+                            </table>
                             % }
                         </table>
                     </td>

@@ -91,6 +91,12 @@ sub show {
     );
 }
 
+sub delete {
+    my $self   = shift; 
+    my $postId = $self->param('postId');
+    PerlBlog::Model::Post->delete({id=>$postId});
+}
+
 
 1;
 
