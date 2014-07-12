@@ -106,7 +106,6 @@ sub create_db_posts_tags {
 sub create_db_tag {
     my $class = shift;
     
-    
     $class->db->query(
         'CREATE TABLE tag (
             id integer NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
@@ -114,21 +113,7 @@ sub create_db_tag {
             name text NOT NULL
         )'
     );
-    
-        
-    #Создание тестовых тегов
-    my $carsCatId = $class->db->query("SELECT * FROM category WHERE name = 'Cars'")->hash()->{'id'};
-    $class->db->query(qq{INSERT INTO tag (category_id, name) VALUES ($carsCatId, 'old cars')});
-    $class->db->query(qq{INSERT INTO tag (category_id, name) VALUES ($carsCatId, 'russian cars')});
-    $class->db->query(qq{INSERT INTO tag (category_id, name) VALUES ($carsCatId, 'big cars')});
-    $class->db->query(qq{INSERT INTO tag (category_id, name) VALUES ($carsCatId, 'bad cars')});
-    
-    my $girlsCatId = $class->db->query("SELECT * FROM category WHERE name = 'Girls'")->hash()->{'id'};
-    $class->db->query(qq{INSERT INTO tag (category_id, name) VALUES ($girlsCatId, 'beautiful')});
-    $class->db->query(qq{INSERT INTO tag (category_id, name) VALUES ($girlsCatId, 'terrible')});
-    $class->db->query(qq{INSERT INTO tag (category_id, name) VALUES ($girlsCatId, 'blonde')});
-    $class->db->query(qq{INSERT INTO tag (category_id, name) VALUES ($girlsCatId, 'brunette')});
-    
+  
 }
 
 #category

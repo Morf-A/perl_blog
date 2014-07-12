@@ -83,7 +83,7 @@ $(function(){
         % foreach my $key (keys $post->{'tags'}) {
         <a href='
             <%=
-                '/tag/' . $key . '?tag_name=' . $post->{'tags'}->{$key}
+                '/tag/show/' . $key . '?tag_name=' . $post->{'tags'}->{$key}
             %>
         '>
             <%=

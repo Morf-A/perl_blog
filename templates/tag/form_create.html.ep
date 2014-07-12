@@ -1,0 +1,52 @@
+% layout 'default';
+
+<script>
+ 
+</script>
+
+<center>
+<h1>Создание тега</h1>
+<form id='post_create' method='POST' action='<%= url_for "tag_create" %>'>
+    <table id='mainTable'>
+        <tr>
+            <td>
+                Название тега:
+            </td>
+            <td >
+                <input type='text' name='name' value='Новый тег' />
+            </td>
+        </tr>
+        
+        <tr>
+            <td >
+                Категория:
+            </td>
+            <td>
+                <select name="categoryId" id='categories'>
+                    %   my $i;
+                    %   for( $i = 0; $i < scalar keys $categories; $i++) {
+                            <option value=
+                                <%=$categories->[$i]->{'id'} 
+                                %>
+                            >
+                                <%=$categories->[$i]->{'name'}
+                                %>
+                            </option>
+                    %  }
+                </select>           
+            </td>
+        </tr>
+        
+        <tr>
+            <td >
+            </td>
+            <td>
+                <br />
+                <input  type='submit' value='Создать!'/>        
+            </td>
+        </tr>
+        
+    </table>
+</form>
+<h1><span style="color: red" ><%= flash 'error' %></span><h1>
+</center>

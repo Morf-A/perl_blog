@@ -12,13 +12,48 @@
                     <td>
                         <table>
                             <tr><td>
+                                <form method='GET' action='<%= url_for "tag_form_create" %>'>
+                                      <input type='submit' value='Добавить тег'/>     
+                                </form>
+                            </td></tr> 
+                            <tr><td>
+                            --------------
+                            <tr><td>
+                                <form method='GET' action='<%= url_for "tag_form_delete" %>'>
+                                      <input type='submit' value='Удалить тег'/>     
+                                </form>
+                            </td></tr> 
+                            <tr><td>
+                            --------------
+                            <tr><td>
+                                <form method='GET' action='<%= url_for "category_form_create" %>'>
+                                      <input type='submit' value='Добавить категорию'/>     
+                                </form>
+                            </td></tr> 
+                            <tr><td>
+                            --------------
+                            <tr><td>
+                                <form method='GET' action='<%= url_for "category_form_delete" %>'>
+                                      <input type='submit' value='Удалить категорию'/>     
+                                </form>
+                            </td></tr> 
+                            <tr><td>
+                            --------------
+                            <tr><td>
                                 <form method='GET' action='<%= url_for "post_form_create" %>'>
                                       <input type='submit' value='Создать пост'/>     
                                 </form>
                             </td></tr> 
                             <tr><td>
-                             --------------
+                             --------------  
                             </td></tr>
+                            <tr><td>
+                                <form method='GET' action='<%= url_for "post_form_delete" %>'>
+                                      <input type='submit' value='Удалить пост'/>     
+                                </form>
+                            </td></tr> 
+                            <tr><td>
+                            --------------
                             <tr><td>     
                                 <form method='POST' action='<%= url_for "auths_delete" %>'>
                                       <input type='submit' value='Exit'/>     
@@ -31,7 +66,7 @@
                             % for( my $i = 0; $i < scalar keys $posts; $i++) {
                                 <tr><td>
                                     <a href="<%=
-                                            '/post/' . $posts->[$i]->{'id'};
+                                            '/post/show/' . $posts->[$i]->{'id'};
                                     %>">
                                         <h2 style="color: green">
                                             <%=

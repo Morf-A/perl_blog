@@ -17,6 +17,33 @@ sub main {
     $self->render(userName=>$userName, posts=>$allPosts, tagname=>$tagname);  
 }
 
+sub form_create {
+    my $self = shift;
+    my $categoryes = PerlBlog::Model::Category->get_categories();
+    
+    $self->render(categories=>$categoryes);
+}
 
+sub create {
+    my $self = shift;
+    
+    my $name        = $self->param('name');
+    my $categoryId  = $self->param('categoryId');
+    
+    # Проверка
+    unless($name) {
+        $self->flash(error => 'Title can not be empty')->redirect_to('tag_form_create');
+        return;
+    }
+    
+    my %tag = (
+        category_id => $categoryId,
+        name => $name
+    );
+    
+    PerlBlog::Model::Tag->insert(\%tag);  
+    
+    $self->redirect_to('/');
+}
 1;
 
