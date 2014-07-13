@@ -63,7 +63,7 @@ $(function(){
                 
         setTimeout(function(){
             $('#commentAdd').attr('disabled', false);
-        }, 3000);
+        }, 2000);
     });
 });
 

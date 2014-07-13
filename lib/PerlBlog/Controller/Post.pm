@@ -100,6 +100,7 @@ sub delete {
     my $self   = shift; 
     my $postId = $self->param('postId');
     PerlBlog::Model::Post->delete({id=>$postId});
+    PerlBlog::Model::PostsTags->delete({post_id=>$postId});
     $self->redirect_to('/');
 }
 

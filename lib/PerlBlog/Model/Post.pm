@@ -18,7 +18,8 @@ sub get_posts_by_tag_id {
         SELECT 
             post.id as id,
             post.title as title,
-            post.preview as preview
+            post.preview as preview,
+            post.author_id as author_id
         FROM 
             post,
             posts_tags
