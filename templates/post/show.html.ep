@@ -65,7 +65,6 @@ $(function(){
             $('#commentAdd').attr('disabled', false);
         }, 3000);
     });
-    
 });
 
 </script>

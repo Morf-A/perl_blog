@@ -25,12 +25,16 @@ sub init {
                  RaiseError     => 1,
                  sqlite_unicode => 1,
             } )  or die DBIx::Simple->error;
+            
         $DB->abstract = SQL::Abstract->new(
                case          => 'lower',
                logic         => 'and',
                convert       => 'upper'
         );
-
+        
+        # Включаем поддержку внешних ключей.
+        $DB->query('PRAGMA foreign_keys = ON;');
+        
         # Создаем таблицы для работы
         unless ( eval {$DB->select('user')} ) {
             $class->create_db_user();
@@ -129,8 +133,8 @@ sub create_db_category {
     );
     
     #Создание тестовыы категорий
-    $class->db->query("INSERT INTO category (name) VALUES  ('Cars')");
-    $class->db->query("INSERT INTO category (name) VALUES  ('Girls')");
+    #$class->db->query("INSERT INTO category (name) VALUES  ('Cars')");
+    #$class->db->query("INSERT INTO category (name) VALUES  ('Girls')");
 }
 
 #commetn
@@ -142,7 +146,14 @@ sub create_db_comment {
             id integer NOT NULL PRIMARY KEY AUTOINCREMENT,
             text text,
             author_id integer NOT NULL,
-            post_id integer NOT NULL
+            post_id integer NOT NULL,
+            
+            FOREIGN KEY (post_id) 
+                REFERENCES
+                    post(id)
+                ON DELETE 
+                    CASCADE
+            
         )'
     );
 }

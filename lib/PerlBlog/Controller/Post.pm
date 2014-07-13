@@ -80,9 +80,8 @@ sub show {
     $preparedPost{'category_name'} = $postData->[0]->{'categoryname'}; 
     $preparedPost{'author_name'}   = $postData->[0]->{'authorname'}; 
     
-    
     my $comments = PerlBlog::Model::Comment->get_comments_by_post_id($postId);
-    
+        
     $self->render(
         post => \%preparedPost,
         currentUserName => $currentUserName,
@@ -95,6 +94,7 @@ sub delete {
     my $self   = shift; 
     my $postId = $self->param('postId');
     PerlBlog::Model::Post->delete({id=>$postId});
+    $self->redirect_to('/');
 }
 
 

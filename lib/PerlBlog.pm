@@ -32,7 +32,6 @@ sub startup {
     $rn->route('/post/new')->via('get')->to('post#form_create')->name('post_form_create'); #viewable
     $rn->route('/post/new')->via('post')->to('post#create')->name('post_create');
     $rn->route('/post/show/:id')->via('get')->to('post#show')->name('post_show'); #viewable
-    $rn->route('/post/delete')->via('get')->to('post#form_delete')->name('post_form_create');
     $rn->route('/post/delete')->via('post')->to('post#delete')->name('post_delete');
     
     #comment
