@@ -9,19 +9,24 @@ use Data::Dumper;
 sub main {
     my $self = shift;
 
-    my $userName = $self->session('login');
-    my $tagId    = $self->param('id');
-    my $tagname  = $self->param('tag_name');
-    my $allPosts = PerlBlog::Model::Post->get_posts_by_tag_id($tagId);
+    my $currentUserId = $self->session('id');
+    my $userName      = $self->session('login');
+    my $tagId         = $self->param('id');
+    my $tagname       = $self->param('tag_name');
+    my $allPosts      = PerlBlog::Model::Post->get_posts_by_tag_id($tagId);
 
-    $self->render(userName=>$userName, posts=>$allPosts, tagname=>$tagname);  
+    $self->render(userName=>$userName, posts=>$allPosts, tagname=>$tagname, currentUserId=>$currentUserId);  
 }
 
 sub form_create {
     my $self = shift;
-    my $categoryes = PerlBlog::Model::Category->get_categories();
+    my $categories = PerlBlog::Model::Category->get_categories();
     
-    $self->render(categories=>$categoryes);
+    unless ($categories->[0]) {
+        $self->flash(error => 'Create a categories')->redirect_to('feed');
+    }
+    
+    $self->render(categories=>$categories);
 }
 
 sub create {

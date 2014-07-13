@@ -13,8 +13,13 @@ sub form_create {
     
     my $author = $self->session('login');
     my $categories = PerlBlog::Model::Category->gat_categories_with_tags();
+    
+    unless ($categories->[0]) {
+        $self->flash(error => 'Create a categories and tags')->redirect_to('feed');
+    }
+    
     my $tags = PerlBlog::Model::Tag->get_tags();
-  
+    
     $self->render(author=>$author, categories=>$categories, tags=>$tags);
     
 }
@@ -29,7 +34,7 @@ sub create {
     my $preview   = $self->param('preview');
     
     my $login = $self->session('login');
-    my $author_id = PerlBlog::Model::User->select({login => $login})->hash()->{id};
+    my $author_id = PerlBlog::Model::User->select({login => $login})->hash()->{'id'};
     
     
     my %post = (
@@ -44,6 +49,7 @@ sub create {
         $self->flash(error => 'Title can not be empty')->redirect_to('post_form_create');
         return;
     }
+
     my $post_id = PerlBlog::Model::Post->insert(\%post);
    
     

@@ -18,6 +18,10 @@
         </script>
         <center>
             <%= content %>
+            <h1>
+                <span style="color: red" ><%= flash 'error' 
+            %></span>
+            </h1>
             <table border = 1>
                 <tr>
                     <td>
