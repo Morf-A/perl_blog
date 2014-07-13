@@ -23,8 +23,8 @@ sub get_posts_by_tag_id {
             post,
             posts_tags
         WHERE 
-            posts_tags.post_id = id AND
-            posts_tags.tag_id =' .  $tagId
+            posts_tags.post_id = post.id AND
+            posts_tags.tag_id =' .  $tagId . ';'
     )->hashes();
 }
 
@@ -57,7 +57,7 @@ sub get_all_posts_info {
             posts_tags.post_id = ' . $postId . ' AND
             posts_tags.tag_id = tagId AND
             tag.category_id = categoryid AND
-            user.id = authorid
+            user.id = authorid;
     ')->hashes();
 }
 

@@ -44,5 +44,34 @@ sub create {
     
     $self->redirect_to('/');
 }
+
+
+sub form_delete {
+    my $self   = shift; 
+    my $tags = PerlBlog::Model::Tag->get_tags();
+    $self->render(tags => $tags);
+}
+
+sub delete {
+    my $self   = shift; 
+    
+    my $tagId = $self->param('tagId');
+    
+    
+    # Проверка 
+    my $posts = PerlBlog::Model::Post->get_posts_by_tag_id($tagId);
+
+    if ( $posts->[0] ) {
+        $self->flash(
+            error        => 'Delete the associated posts!',
+        )->redirect_to('tag_form_delete');
+        return;
+    }
+    
+    PerlBlog::Model::Tag->delete({id=>$tagId});
+    $self->redirect_to('/');
+}
+
+
 1;
 

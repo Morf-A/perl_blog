@@ -24,5 +24,35 @@ sub create {
     
     $self->redirect_to('/');
 }
-1;
 
+
+
+sub form_delete {
+    my $self   = shift; 
+    
+    my $categories = PerlBlog::Model::Category->get_categories();
+    $self->render(categories => $categories);
+}
+
+
+sub delete {
+    my $self   = shift; 
+    my $categoryId = $self->param('categoryId');
+    
+    # Проверка 
+    my $tags = PerlBlog::Model::Tag->get_tags_by_category_id($categoryId);
+
+
+    
+    if ( $tags->[0] ) {
+        $self->flash(
+            error        => 'Delete the associated tags!',
+        )->redirect_to('category_form_delete');
+        return;
+    }
+    
+    PerlBlog::Model::Category->delete({id=>$categoryId});
+    $self->redirect_to('/');
+}
+
+1;

@@ -20,7 +20,7 @@ sub gat_categories_with_tags {
         FROM 
             category JOIN tag 
         ON 
-            category.id = tag.category_id
+            category.id = tag.category_id;
     ')->hashes();
 }
 

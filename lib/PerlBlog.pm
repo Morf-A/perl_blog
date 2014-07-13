@@ -42,7 +42,7 @@ sub startup {
     $rn->route('/tag/new')->via('get')->to('tag#form_create')->name('tag_form_create');
     $rn->route('/tag/new')->via('post')->to('tag#create')->name('tag_create');
     $rn->route('/tag/delete')->via('get')->to('tag#form_delete')->name('tag_form_delete');
-    $rn->route('/tag/delete')->via('post')->to('tag#delete')->name('tag_create');
+    $rn->route('/tag/delete')->via('post')->to('tag#delete')->name('tag_delete');
     
     #category
     $rn->route('/category/new')->via('get')->to('category#form_create')->name('category_form_create');

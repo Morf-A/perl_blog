@@ -21,7 +21,7 @@ sub get_comments_by_post_id {
             comment, user
         WHERE 
             comment.post_id = ' . $postId . ' AND
-            comment.author_id = user.id
+            comment.author_id = user.id;
     ')->hashes();
 }
 
