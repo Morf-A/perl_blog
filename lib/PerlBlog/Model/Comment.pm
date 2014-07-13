@@ -20,7 +20,7 @@ sub get_comments_by_post_id {
         FROM 
             comment, user
         WHERE 
-            comment.post_id = 6 AND
+            comment.post_id = ' . $postId . ' AND
             comment.author_id = user.id
     ')->hashes();
 }
